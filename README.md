@@ -1,8 +1,9 @@
 # How to run (tested on macOS):
-install node js
+    install node js
+
     https://nodejs.org/en/download
 
-open terminal
+    open terminal
 
     run "node -v" to ensure node.js is installed
     
