@@ -8,7 +8,7 @@ import Home from "./pages/Index.jsx";
 import Alumni from "./pages/Alumni.jsx";
 import Apply from "./pages/Apply.jsx";
 import Timeline from "./pages/Timeline.jsx";
-import Footer from "/src/components/Footer/Footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
  
 function App() {
     return (
