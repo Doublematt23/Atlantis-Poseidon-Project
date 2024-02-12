@@ -1,5 +1,5 @@
 # How to run (tested on macOS):
-install node js
+install node js \n
     https://nodejs.org/en/download
 
 open terminal
