@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Atlantis Dual Degree Program - Alumni</title>
+    <title>Help - Atlantis Dual Degree Program</title>
 </head>
 <body>
 
@@ -25,32 +25,26 @@
     </header>
 
     <div class="main-content">
-        <h2 class="center-heading">Alumni</h2>
-
-        <div class="alumni-item">
-            <img src="alumni1.jpg" alt="Alumni 1">
-            <div class="alumni-details">
-                <p>Name: John Doe</p>
-                <p>Contact: john.doe@example.com</p>
+        <section>
+            <h2>Questions about the Atlantis Program</h2>
+            <p>For More Help About Questions about the Atlantis program contact us.</p>
+            <button onclick="document.getElementById('contactForm').style.display='block'">Contact Us</button>
+            <div id="contactForm" style="display:none;">
+                <form action="send_email.php" method="POST">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Send">
+                </form>
             </div>
-        </div>
+        </section>
 
-        <div class="alumni-item">
-            <img src="alumni2.jpg" alt="Alumni 2">
-            <div class="alumni-details">
-                <p>Name: Jane Smith</p>
-                <p>Contact: jane.smith@example.com</p>
-            </div>
-        </div>
-
-        <div class="alumni-item">
-            <img src="alumni3.jpg" alt="Alumni 3">
-            <div class="alumni-details">
-                <p>Name: Alex Johnson</p>
-                <p>Contact: alex.johnson@example.com</p>
-            </div>
-        </div>
-
+        <section>
+            <h2>For Questions about Study Abroad</h2>
+            <p>Please contact Cara Miller for more info about visa, housing, and cost for the study abroad program.<br>
+            Cara Miller's email: <a href="mailto:cmille12@depaul.edu">cmille12@depaul.edu</a>.</p>
+        </section>
     </div>
 
     <footer>
@@ -73,11 +67,17 @@
             <h2>School</h2>
             <p>School Information</p>
         </div>
-        <!-- Google Calendar Embed -->
         <div class="calendar-embed">
             <iframe src="https://calendar.google.com/calendar/embed?src=a9ccdb92850282dcfa9993cd2f00e0991e81369602f093463f10a4383bb68b5e%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
         </div>
     </footer>
 
+    <script>
+        // Simple script to toggle the display of the contact form
+        document.querySelector('button').addEventListener('click', function() {
+            var form = document.getElementById('contactForm');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>
