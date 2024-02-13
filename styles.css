@@ -158,3 +158,47 @@ footer {
 .alumni-details {
     flex: 1;
 }
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Light background for dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav li {
+    margin-right: 20px;
+    color: white; /* Ensures text color consistency */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Adjust nav a to not affect dropdown content */
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
