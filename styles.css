@@ -252,3 +252,21 @@ nav > ul > li > a {
     left: 50%;
     z-index: 0; /* Below arrows and boxes */
 }
+
+.france-heading {
+    text-align: center;
+}
+
+.france-heading span:nth-child(1),
+.france-heading span:nth-child(3) {
+    color: #0055a4; /* Blue */
+}
+
+.france-heading span:nth-child(2),
+.france-heading span:nth-child(4) {
+    color: #5f5a5a; /* White */
+}
+
+.france-heading span:nth-child(5) {
+    color: #ef4135; /* Red */
+}
