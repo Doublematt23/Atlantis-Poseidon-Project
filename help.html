@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Corrected the viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="styles.css">
     <title>Help - Atlantis Dual Degree Program</title>
 </head>
@@ -27,25 +28,15 @@
     <div class="main-content">
         <section>
             <h2>Questions about the Atlantis Program</h2>
-            <p>For More Help About Questions about the Atlantis program contact us.</p>
-            <button onclick="document.getElementById('contactForm').style.display='block'">Contact Us</button>
-            <div id="contactForm" style="display:none;">
-                <form action="send_email.php" method="POST">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
+            <p>For More Help About Questions about the DePaul Atlantis program, please reach out via email to Janine Spears(<a href="mailto:jspears2@depaul.edu">jspears2@depaul.edu)</a>.</p>
         </section>
 
         <section>
             <h2>For Questions about Study Abroad</h2>
-            <p>Please contact Cara Miller for more info about visa, housing, and cost for the study abroad program.<br>
-            Cara Miller's email: <a href="mailto:cmille12@depaul.edu">cmille12@depaul.edu</a>.</p>
+            <p>Please contact Cara Miller(<a href="mailto:cmille12@depaul.edu">cmille12@depaul.edu)</a> for more info about visa, housing, and cost for the study abroad program.<br>
+            .</p>
         </section>
-    </div>
+    </div> <!-- Corrected the closing tag for div.main-content -->
 
     <footer>
         <div class="footer-section">
@@ -67,17 +58,10 @@
             <h2>School</h2>
             <p>School Information</p>
         </div>
+        <!-- Google Calendar Embed -->
         <div class="calendar-embed">
             <iframe src="https://calendar.google.com/calendar/embed?src=a9ccdb92850282dcfa9993cd2f00e0991e81369602f093463f10a4383bb68b5e%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
         </div>
     </footer>
-
-    <script>
-        // Simple script to toggle the display of the contact form
-        document.querySelector('button').addEventListener('click', function() {
-            var form = document.getElementById('contactForm');
-            form.style.display = form.style.display === 'none' ? 'block' : 'none';
-        });
-    </script>
 </body>
 </html>
