@@ -1,5 +1,6 @@
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
+
  
 export const Nav = styled.nav`
     background: #044d7e;
@@ -19,7 +20,7 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     &.active {
-        //set color of active button
+        //set color of active butto
         color: #ff8c00;
     }
 `;
@@ -36,4 +37,5 @@ white-space: nowrap; */
     @media screen and (max-width: 768px) {
         display: none;
     }
-`;
+`
+;
