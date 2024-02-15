@@ -32,7 +32,9 @@ const Footer = () => {
 
             {/* <!-- Google Calendar Embed --> */}
             <div class="calendar-embed">
-                <iframe src="https://calendar.google.com/calendar/embed?src=a9ccdb92850282dcfa9993cd2f00e0991e81369602f093463f10a4383bb68b5e%40group.calendar.google.com&ctz=America%2FChicago" style={{border: "0", width: "400px", height: "300px", frameborder: "0", scrolling: "no"}}></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?src=a9ccdb92850282dcfa9993cd2f00e0991e81369602f093463f10a4383bb68b5e%40group.calendar.google.com&ctz=America%2FChicago" 
+                    style={{border: "0", width: "100%", height: "300px", frameborder: "0", scrolling: "no"}}>
+                    </iframe>
             </div> 
         </footer>
     );

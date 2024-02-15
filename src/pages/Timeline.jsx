@@ -15,7 +15,7 @@ const Timeline = () => {
             </div>
             
             {/* There's also a line in Navbar.jsx that calls loadEvents(), for some reason you need both lol */}
-            {window.addEventListener('load', loadEvents)};
+            {window.addEventListener('load', loadEvents)}
         </>
     );
 };

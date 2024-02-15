@@ -1,4 +1,4 @@
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import { Nav, NavLink, NavMenu } from "./NavbarStyles";
 import logo from "/src/assets/Logo.png";
  
 const Navbar = () => {
