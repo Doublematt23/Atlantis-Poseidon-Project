@@ -3,7 +3,7 @@ const Alumni = () => {
         <div class="main-content">
             <h2 class="center-heading">Alumni</h2>
 
-            <div class="alumni-item">
+            <div class="program-section">
                 <img src="alumni1.jpg" alt="Alumni 1" />
                 <div class="alumni-details">
                     <p>Name: John Doe</p>
@@ -11,7 +11,7 @@ const Alumni = () => {
                 </div>
             </div>
 
-            <div class="alumni-item">
+            <div class="program-section">
                 <img src="alumni2.jpg" alt="Alumni 2" />
                 <div class="alumni-details">
                     <p>Name: Jane Smith</p>
@@ -19,7 +19,7 @@ const Alumni = () => {
                 </div>
             </div>
 
-            <div class="alumni-item">
+            <div class="program-section">
                 <img src="alumni3.jpg" alt="Alumni 3" />
                 <div class="alumni-details">
                     <p>Name: Alex Johnson</p>

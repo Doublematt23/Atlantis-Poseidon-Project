@@ -145,11 +145,11 @@ footer {
     text-align: center;
     color: #ff8c00; /* Orange text color */
 }
-
+/* 
 .alumni-item {
     display: flex;
     margin-bottom: 20px;
-}
+} */
 
 .alumni-item img {
     width: 150px; /* Adjust as needed */
