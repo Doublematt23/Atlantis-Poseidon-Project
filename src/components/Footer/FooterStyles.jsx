@@ -33,6 +33,7 @@ export const Column = styled.div`
 export const Facebox = styled.div`
     display: flex;
     align-items: center;
+    text-align: left;
     gap: 20px;
     
 `;
