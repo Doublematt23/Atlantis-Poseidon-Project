@@ -12,7 +12,6 @@ import Help from "./pages/Help.jsx";
 import USA from "./pages/USA.jsx";
 import France from "./pages/France.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import Footer2 from "./components/Footer/Footer2.jsx";
  
 function App() {
     return (
@@ -32,7 +31,7 @@ function App() {
             </Router>
 
             {/* footer */}
-            <Footer2 />
+            <Footer />
         </>
     )
 
