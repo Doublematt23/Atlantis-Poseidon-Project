@@ -4,6 +4,7 @@ import styled from "styled-components";
  
 export const Nav = styled.nav`
     background: #044d7e;
+    
     height: 85px;
     display: flex;
     justify-content: space-between;
@@ -12,30 +13,64 @@ export const Nav = styled.nav`
 `;
  
 export const NavLink = styled(Link)`
+        // width: 100%;
     color: #808080;
     display: flex;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
     &.active {
-        //set color of active butto
+        //set color of active button
         color: #ff8c00;
+    }
+    @media screen and (max-width: 768px) {
+        background: #044d7e;
+        box-sizing: border-box;
+        width:100%;
+        justify-content: center;
+        height: 50px;
     }
 `;
  
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -24px;
-    /* Second Nav */
-    /* margin-right: 24px; */
-    /* Third Nav */
-    /* width: 100vw;
-white-space: nowrap; */
+    justify-content: right;
+    
     @media screen and (max-width: 768px) {
         display: none;
     }
-`
-;
+`;
+
+export const NavMenuBurger = styled.div`
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: none;
+        align-items: center;
+        justify-content: right;
+        flex-direction: column;
+    
+    }
+`;
+
+export const NavButton = styled.button`
+    display:none;
+    margin: auto;
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 60px;
+        height: 50px;
+        margin-right: 5px;
+        background: #044d7e;
+        color: white;
+        border: none;
+        font-size: 30px;
+    
+    }
+    
+`;

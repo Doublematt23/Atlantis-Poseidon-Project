@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar/Navbar.jsx";
+import NavbarBurger from "./components/Navbar/NavbarBurger.jsx";
 import {
     BrowserRouter as Router,
     Routes,
@@ -19,6 +20,7 @@ function App() {
             {/* header */}
             <Router>
                 <Navbar />
+                <NavbarBurger />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route path="/Timeline" element={<Timeline />} />

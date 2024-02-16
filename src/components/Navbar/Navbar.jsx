@@ -1,4 +1,4 @@
-import { Nav, NavLink, NavMenu } from "./NavbarStyles";
+import { Nav, NavLink, NavMenu, NavButton } from "./NavbarStyles";
 import logo from "/src/assets/Logo.png";
  
 const Navbar = () => {
@@ -9,7 +9,9 @@ const Navbar = () => {
                     <img src={logo} alt="Atlantis Logo"></img>
                     <h1>Atlantis Dual Degree Program</h1>
                 </div>
-                
+
+                <NavButton onClick={() => toggleBurger()} id="burgerButton">≡</NavButton>
+
                 <NavMenu>
                     <NavLink to="/" activeStyle>
                         Home
@@ -44,9 +46,27 @@ const Navbar = () => {
                         Help
                     </NavLink> 
                 </NavMenu>
+
+
+                
             </Nav>
+
         </>
     );
 };
  
 export default Navbar;
+
+function toggleBurger() {
+    var myBurger = document.getElementById("NavBurger");
+    var burgerButton = document.getElementById('burgerButton');
+
+    if (myBurger.style.display == 'flex') {
+        myBurger.style.display = 'none';
+        burgerButton.innerHTML = '≡';
+    }
+    else {
+        myBurger.style.display = 'flex';
+        burgerButton.innerHTML = 'x';
+    }
+  }
