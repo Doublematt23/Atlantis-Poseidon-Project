@@ -1,4 +1,4 @@
-# How to run (tested on macOS):
+# How to run:
     install node js
 
     https://nodejs.org/en/download
