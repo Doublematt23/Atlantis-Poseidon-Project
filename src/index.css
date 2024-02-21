@@ -1,150 +1,151 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
 
-    /* locks the footer to the bottom of the page */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  /* locks the footer to the bottom of the page */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    background-color: #044d7e; /* Blue header background */
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #044d7e; /* Blue header background */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    color: white;
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 .logo-container img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .main-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Adjusted to stack content vertically */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
 }
 
 .program-section,
 .eligibility-section,
 .degree-information-section {
-    display: flex;
-    flex-direction: row; /* Adjusted to arrange content side by side */
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .program-image img,
 .eligibility-image img,
 .degree-information-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
 }
 
 .program-introduction,
 .eligibility-text,
 .degree-information-text {
-    flex: 1;
+  flex: 1;
 }
 
 .program-introduction h2,
 .eligibility-text h2,
 .degree-information-text h2 {
-    color: #ff8c00; /* Orange heading text */
+  color: #ff8c00;
 }
 
 footer {
-    background-color: #044d7e; /* Blue footer background */
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
+  background-color: #044d7e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-section {
-    text-align: center;
+  text-align: center;
 }
 
 .timeline-heading {
-    text-align: center;
-    color: #ff8c00; /* Orange text color */
+  text-align: center;
+  color: #ff8c00;
 }
 
 .vertical-timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .timeline-item::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: #007acc; /* Blue line color */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #007acc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .timeline-box {
-    border: 2px solid #007acc; /* Blue border */
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #ffffff; /* White background */
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ffffff;
 }
 
 .timeline-box h3,
 .timeline-box p,
 .timeline-box .deadline {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .timeline-box .deadline {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .center-heading {
-    text-align: center;
-    color: #ff8c00; /* Orange text color */
+  text-align: center;
+  color: #ff8c00;
 }
+
 /* 
 .alumni-item {
     display: flex;
@@ -152,148 +153,153 @@ footer {
 } */
 
 .alumni-item img {
-    width: 150px; /* Adjust as needed */
-    height: auto;
-    margin-right: 20px;
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
 }
 
 .alumni-details {
-    flex: 1;
+  flex: 1;
 }
 
 /* Dropdown Menu Styles */
 .dropdown {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #808080;
-    @media screen and (max-width: 768px) {
-      background: #044d7e;
-      width:100%;
-      text-align: center;
-      /* background: red; */
-      height: 50px;
-      /* padding-top: 17px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+
+  @media screen and (max-width: 768px) {
+    background: #044d7e;
+    width: 100%;
+    text-align: center;
+    /* background: red; */
+    height: 50px;
+    /* padding-top: 17px;
       padding-bottom: 17px; */
-      /* margin: 1px; */
+    /* margin: 1px; */
+
   }
-    
+
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-    
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 
-    /* overwrite the navbar color change effect */
-    /* &.active {
+  /* overwrite the navbar color change effect */
+  /* &.active {
       color: black;
     } */
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd; 
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 nav li {
-    /* margin-right: 20px; */
-    
-    /* ensures the drop down menus have the same padding as the other navbar elements */
-    padding: 0 1rem;
-    color: #808080; /* Ensures text color consistency */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    
+  /* margin-right: 20px; */
+
+  /* ensures the drop down menus have the same padding as the other navbar elements */
+  padding: 0 1rem;
+  color: #808080;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+
 }
 
 /* Adjust nav a to not affect dropdown content */
-nav > ul > li > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
+nav>ul>li>a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 
 /* Timeline Styles */
 .vertical-timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align the items for arrow alignment */
-    margin: 20px 0; /* Adjust margin for visual spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .timeline-point {
-    width: 20px;
-    height: 20px;
-    background-color: #007acc; /* Adjust the color as needed */
-    clip-path: polygon(50% 100%, 0 0, 100% 0); /* This makes the arrow point downwards */
-    z-index: 1;
-    margin-top: -10px; /* Adjust as necessary to position correctly */
+  width: 20px;
+  height: 20px;
+  background-color: #007acc;
+  clip-path: polygon(50% 100%, 0 0, 100% 0); /* This makes the arrow point downwards */
+  z-index: 1;
+  margin-top: -10px;
 }
 
 
 .timeline-box {
-    width: 80%; /* Set a standard width or max-width as per your design */
-    border: 2px solid #007acc;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #ffffff;
-    text-align: center; /* Center the text */
-    margin-top: -10px; /* Adjust based on arrow size to overlap */
-    z-index: 2; /* Ensure box is above the arrow */
-    position: relative; /* Needed for z-index to work */
+  width: 80%;
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: -10px; /* Adjust based on arrow size to overlap */
+  z-index: 2; /* Ensure box is above the arrow */
+  position: relative; /* Needed for z-index to work */
 }
 
 /* Creates line between items */
 .timeline-item:not(:last-child)::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 40px; /* Adjust based on your spacing */
-    background-color: #007acc;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    z-index: 0; /* Below arrows and boxes */
+  content: "";
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: #007acc;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 0; /* Below arrows and boxes */
 }
 
 .france-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .france-heading span:nth-child(1),
 .france-heading span:nth-child(3) {
-    color: #0055a4; /* Blue */
+  color: #0055a4;
+  /* Blue */
 }
 
 .france-heading span:nth-child(2),
 .france-heading span:nth-child(4) {
-    color: #5f5a5a; /* White */
+  color: #5f5a5a;
+  /* White */
 }
 
 .france-heading span:nth-child(5) {
-    color: #ef4135; /* Red */
+  color: #ef4135;
+  /* Red */
 }

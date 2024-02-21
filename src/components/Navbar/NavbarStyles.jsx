@@ -1,7 +1,7 @@
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
- 
+
 export const Nav = styled.nav`
     background: #044d7e;
     
@@ -11,9 +11,9 @@ export const Nav = styled.nav`
     padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
 `;
- 
+
 export const NavLink = styled(Link)`
-        // width: 100%;
+    // width: 100%;
     color: #808080;
     display: flex;
     font-family: 'Arial', sans-serif;
@@ -36,7 +36,34 @@ export const NavLink = styled(Link)`
         height: 50px;
     }
 `;
- 
+
+export const NavLinkBurger = styled(NavLink)`
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+`;
+
+export const DropdownBurger = styled.li`
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    @media screen and (max-width: 768px) {
+      background: #044d7e;
+      width:100%;
+      text-align: center;
+      height: 50px;
+
+    }
+    
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+`;
+
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
@@ -50,7 +77,6 @@ export const NavMenu = styled.div`
 export const NavMenuBurger = styled.div`
     display: none;
     @media screen and (max-width: 768px) {
-        display: none;
         align-items: center;
         justify-content: right;
         flex-direction: column;

@@ -1,45 +1,47 @@
 
-import { NavLink, NavMenuBurger } from "./NavbarStyles";
- 
+import { DropdownBurger, NavLinkBurger, NavMenuBurger } from "./NavbarStyles";
+
+//styling is kind of a mess here, there is code in both NavbarStyles and index.css(dropdown code)
+//would be nice to consolidate the two locations. can all go in NavbarStyles since all dropdown code is for navbars currently
 const NavbarBurger = () => {
     return (
         <>
             <NavMenuBurger id="NavBurger">
-                <NavLink to="/" activeStyle>
+                <NavLinkBurger id="NavLinkBurger" to="/" activeStyle>
                     Home
-                </NavLink> 
-                <NavLink to="/Alumni" activeStyle>
+                </NavLinkBurger>
+                <NavLinkBurger to="/Alumni" activeStyle>
                     Alumni
-                </NavLink>
-                <li class="dropdown"><strong>Application Info</strong>
+                </NavLinkBurger>
+                <DropdownBurger><strong>Application Info</strong>
                     <div class="dropdown-content">
-                        <NavLink to="/Apply" activeStyle>
-                        Apply
-                        </NavLink>
-                        <NavLink to="/Timeline" onClick={() => loadEvents()} activeStyle>
-                        Application Timeline
-                        </NavLink>
+                        <NavLinkBurger to="/Apply" activeStyle>
+                            Apply
+                        </NavLinkBurger>
+                        <NavLinkBurger to="/Timeline" onClick={() => loadEvents()} activeStyle>
+                            Application Timeline
+                        </NavLinkBurger>
                     </div>
-                </li>
-                <li class="dropdown"><strong>Countries</strong>
+                </DropdownBurger>
+                <DropdownBurger><strong>Countries</strong>
                     <div class="dropdown-content">
-                        <NavLink to="/USA" activeStyle>
+                        <NavLinkBurger to="/USA" activeStyle>
                             USA
-                        </NavLink>
-                        <NavLink to="/France" activeStyle>
+                        </NavLinkBurger>
+                        <NavLinkBurger to="/France" activeStyle>
                             France
-                        </NavLink>
-                        <NavLink to="/Sweden" activeStyle>
+                        </NavLinkBurger>
+                        <NavLinkBurger to="/Sweden" activeStyle>
                             Sweden
-                        </NavLink>
+                        </NavLinkBurger>
                     </div>
-                </li>
-                <NavLink to="/Help" activeStyle>
+                </DropdownBurger>
+                <NavLinkBurger to="/Help" activeStyle>
                     Help
-                </NavLink> 
+                </NavLinkBurger>
             </NavMenuBurger>
         </>
     );
 };
- 
+
 export default NavbarBurger;
