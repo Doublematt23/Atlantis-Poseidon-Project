@@ -38,18 +38,41 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavLinkBurger = styled(NavLink)`
+
     @media screen and (min-width: 769px) {
         display: none;
     }
 `;
+export const NavLinkBurgerDrop = styled(NavLinkBurger)`
 
-export const DropdownBurger = styled.li`
+    justify-content: left;
+    padding-left: 50%;
+    font-weight: normal;
+
+`;
+
+export const DropdownContentBurger = styled.div`
+display: flex;
+position: relative;
+flex-direction: column;
+width: 100%;
+// background-color: #f9f9f9;
+// min-width: 160px;
+// box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+// z-index: 1;
+`;
+
+export const DropdownBurger = styled.button`
 
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #808080;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
     @media screen and (max-width: 768px) {
       background: #044d7e;
       width:100%;
@@ -62,6 +85,12 @@ export const DropdownBurger = styled.li`
     @media screen and (min-width: 769px) {
         display: none;
     }
+`;
+
+export const DropdownButton = styled.div`
+display: flex;
+width:100%;
+
 `;
 
 export const NavMenu = styled.div`
