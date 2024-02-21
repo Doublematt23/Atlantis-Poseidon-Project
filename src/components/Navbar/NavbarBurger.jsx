@@ -7,8 +7,6 @@ import {
     NavMenuBurger
 } from "./NavbarStyles";
 
-//styling is kind of a mess here, there is code in both NavbarStyles and index.css(dropdown code)
-//would be nice to consolidate the two locations. can all go in NavbarStyles since all dropdown code is for navbars currently
 const NavbarBurger = () => {
     return (
         <>
