@@ -1,4 +1,4 @@
-import { Nav, NavLink, NavMenu, NavButton } from "./NavbarStyles";
+import { Nav, NavLink, NavMenu, NavButton, NavHeader } from "./NavbarStyles";
 import logo from "/src/assets/Logo.png";
  
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
             <Nav>
                 <div class="logo-container">
                     <img src={logo} alt="Atlantis Logo"></img>
-                    <h1>Atlantis Dual Degree Program</h1>
+                    <NavHeader >Atlantis Dual Degree Program</NavHeader>
                 </div>
 
                 <NavButton onClick={() => toggleBurger()} id="burgerButton">≡</NavButton>

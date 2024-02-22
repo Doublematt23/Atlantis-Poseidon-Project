@@ -5,11 +5,21 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     background: #044d7e;
     
-    height: 85px;
+    height: 60px;
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
-    padding: 0.2rem calc((100vw - 1000px) / 2);
+    // padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
+    box-shadow: 0px 6px 7px -7px black; 
+
+    // fun with transparency
+    // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    // filter: alpha(opacity=80);
+    // -moz-opacity: 0.80;
+    // -khtml-opacity: 0.8;
+    // opacity: 0.8;
 `;
 
 export const NavLink = styled(Link)`
@@ -49,6 +59,11 @@ export const NavLinkBurgerDrop = styled(NavLinkBurger)`
     padding-left: 50%;
     font-weight: normal;
 
+`;
+
+
+export const NavHeader = styled.h1`
+//  font-size: 16;
 `;
 
 export const DropdownContentBurger = styled.div`
@@ -105,6 +120,11 @@ export const NavMenu = styled.div`
 
 export const NavMenuBurger = styled.div`
     display: none;
+    margin-top: 60px;
+    z-index: 12;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 6px 7px -7px black;
     @media screen and (max-width: 768px) {
         align-items: center;
         justify-content: right;

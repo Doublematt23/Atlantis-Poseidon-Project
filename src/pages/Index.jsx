@@ -1,3 +1,5 @@
+import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListItem } from "./PageStyles";
+
 const Home = () => {
     return (
         <>
