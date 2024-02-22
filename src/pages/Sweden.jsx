@@ -58,7 +58,7 @@ const Sweden = () => {
 
     return (
         <div style={styles.mainContent}>
-            <h2 style={styles.heading}>Linköping University</h2>
+            <h2 style={styles.heading}>Study in Sweden</h2>
             <img src={titlePic} alt="Sweden" style={styles.imgStyle} />
             <p style={styles.introParagraph}>
                 DePaul students will be attending Linköping University, one of Sweden's leading academic institutions, located in the vibrant city of Linkoping. During their studies, students will have the opportunity to immerse themselves in a dynamic educational environment as they spend a semester at Linköping University. The program includes seven classes, crucial for the completion of their degree. Students are required to pass all courses to qualify for a Bachelor of Science in Business Administration from Linköping University. These courses are integral to both DePaul and WIU degrees, providing a comprehensive international educational experience.

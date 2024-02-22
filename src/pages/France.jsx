@@ -56,7 +56,7 @@ const France = () => {
 
     return (
         <div style={styles.mainContent}>
-            <h2 style={styles.heading}>Study in <span style={{color: '#007bff'}}>F</span><span style={{color: '#27a745'}}>r</span><span style={{color: '#d9534f'}}>a</span><span style={{color: '#f0ad4e'}}>n</span><span style={{color: '#5bc0de'}}>c</span><span style={{color: '#5cb85c'}}>e</span></h2>
+            <h2 style={styles.heading}>Study in France</h2>
             <img src={titlePic} alt="INSEEC" style={styles.imgStyle} />
             <p style={styles.introParagraph}>DePaul students will be attending BBA INSEEC, a business college, at the campus located in the city of Lyon, France. During your Junior year, you will spend your fall semester in Lyon, France at the BBA INSEEC taking business courses there. You will take 7 classes during your time there, and you must PASS all six business courses to get your Linköping degree. All seven courses count toward DePaul and WIU Degrees.</p>
 
