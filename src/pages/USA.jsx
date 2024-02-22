@@ -67,7 +67,7 @@ const USA = () => {
                 <li style={styles.listItem}><strong>Open Elective Courses:</strong> Any graduate CDM course numbered 421 to 699.</li>
                 <li style={styles.listItem}><strong>Capstone Course:</strong> Capstone course, Internship, or Research. Most take the IS 577 course.</li>
              
-                <div style={styles.subHeading}>Course Goals</div>
+                <div style={styles.subHeading}>Course Info</div>
                 <ul style={styles.list}></ul>
                 <li style={styles.listItem}><strong>Project Management and Business Analysis:</strong> Learn to plan and execute IT projects, understand end-user and organizational needs, and model appropriate systems functions for these needs.</li>
                 <li style={styles.listItem}><strong>Analytics-Driven Decision Making:</strong> Learn advanced analytics concepts, tools, systems, and backend data management. </li>
