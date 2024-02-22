@@ -49,8 +49,9 @@ const France = () => {
             padding: '15px',
             borderRadius: '5px',
             boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
-            borderLeft: '5px solid #007bff',
+            borderLeft: '5px solid #ff0000', 
         },
+        
     };
 
     return (
@@ -59,7 +60,7 @@ const France = () => {
             <img src={titlePic} alt="INSEEC" style={styles.imgStyle} />
             <p style={styles.introParagraph}>DePaul students will be attending BBA INSEEC, a business college, at the campus located in the city of Lyon, France. During your Junior year, you will spend your fall semester in Lyon, France at the BBA INSEEC taking business courses there. You will take 7 classes during your time there, and you must PASS all six business courses to get your Linköping degree. All seven courses count toward DePaul and WIU Degrees.</p>
 
-            <div style={styles.subHeading}>Course Goals</div>
+            <div style={styles.subHeading}>Course Info</div>
             <ul style={styles.list}>
                 <li style={styles.listItem}>Organizational Behavior - The purpose of this course is to enable students to analyze and influence repeated patterns of action in groups and organizations. Specifically, this course helps the students to understand organizational behavior theory and phenomena from different perspectives (psychology, social neurosciences, anthropology, organization theories…), critically evaluate human actions (group/individual) within an organization, and apply this knowledge to managerial and organizational situations.</li>
                 <li style={styles.listItem}>Finance in a Flat World - The course offers an introduction to the main topics of financial theory applied to the corporate environment. Emphasis is placed on making decisions which increase shareholder wealth. The key concepts covered include Capital Structure Theory, the Cost of Capital, Measuring Risk, Valuation Models, Capital Budgeting, Cash Flow Forecasting, and International Finance.</li>
