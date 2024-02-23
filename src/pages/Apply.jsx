@@ -1,8 +1,8 @@
 const Apply = () => {
     return (
-        <div class="main-content">
-            <div class="program-section">
-                <div class="program-introduction">
+        <div className="main-content">
+            <div className="program-section">
+                <div className="program-introduction">
                     <h2>Application Info</h2>
                         <a href="https://programsabroad.depaul.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=10139">Apply to Atlantis here</a>
                         

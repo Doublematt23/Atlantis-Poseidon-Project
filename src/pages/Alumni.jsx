@@ -1,34 +1,45 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 const Alumni = () => {
-    return (
-        <div class="main-content">
-            <h2 class="center-heading">Alumni</h2>
+  const [alumniArray, setAlumniArray] = useState([]);
 
-            <div class="program-section">
-                <img src="alumni1.jpg" alt="Alumni 1" />
-                <div class="alumni-details">
-                    <p>Name: John Doe</p>
-                    <p>Contact: john.doe@example.com</p>
-                </div>
-            </div>
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://34.204.247.99/read.php");
+        setAlumniArray(response.data);
+        console.log(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
-            <div class="program-section">
-                <img src="alumni2.jpg" alt="Alumni 2" />
-                <div class="alumni-details">
-                    <p>Name: Jane Smith</p>
-                    <p>Contact: jane.smith@example.com</p>
-                </div>
-            </div>
+    fetchData();
+  }, []);
 
-            <div class="program-section">
-                <img src="alumni3.jpg" alt="Alumni 3" />
-                <div class="alumni-details">
-                    <p>Name: Alex Johnson</p>
-                    <p>Contact: alex.johnson@example.com</p>
-                </div>
-            </div>
+  return (
+    <div className="main-content">
+      <h2 className="center-heading">Alumni</h2>
 
+      {alumniArray.map((alumni) => (
+        <div className="program-section" key={alumni.id}>
+          <img
+            src={`data:image/jpeg;base64,${alumni.picture}`}
+            style={{ height: "200px", width: "200px" }} // Set height and width to 200px
+            alt={alumni.name}
+          />
+          <div className="alumni-details">
+            <p>
+              Name: {alumni.firstname} {alumni.lastname}
+            </p>
+            <p>Email: {alumni.email}</p>
+            <p>Major: {alumni.major}</p>
+          </div>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
- 
+
 export default Alumni;

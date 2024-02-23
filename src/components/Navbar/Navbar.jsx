@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <div class="logo-container">
+                <div className="logo-container">
                     <img src={logo} alt="Atlantis Logo"></img>
                     <NavHeader >Atlantis Dual Degree Program</NavHeader>
                 </div>
@@ -19,8 +19,8 @@ const Navbar = () => {
                     <NavLink to="/Alumni" activeStyle>
                         Alumni
                     </NavLink>
-                    <li class="dropdown"><strong>Application Info</strong>
-                        <div class="dropdown-content">
+                    <li className="dropdown"><strong>Application Info</strong>
+                        <div className="dropdown-content">
                             <NavLink to="/Apply" activeStyle>
                             Apply
                             </NavLink>
@@ -29,8 +29,8 @@ const Navbar = () => {
                             </NavLink>
                         </div>
                     </li>
-                    <li class="dropdown"><strong>Countries</strong>
-                        <div class="dropdown-content">
+                    <li className="dropdown"><strong>Countries</strong>
+                        <div className="dropdown-content">
                             <NavLink to="/USA" activeStyle>
                                 USA
                             </NavLink>
