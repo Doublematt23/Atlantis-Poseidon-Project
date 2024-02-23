@@ -1,5 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import {
+  Box,
+  Container,
+  Grid,
+  Card,
+  Link,
+  CardMedia,
+  CardContent,
+  Typography,
+} from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Alumni = () => {
   const [alumniArray, setAlumniArray] = useState([]);
@@ -19,27 +30,55 @@ const Alumni = () => {
   }, []);
 
   return (
-    <div className="main-content">
-      <h2 className="center-heading">Alumni</h2>
-
-      {alumniArray.map((alumni) => (
-        <div className="program-section" key={alumni.id}>
-          <img
-            src={`data:image/jpeg;base64,${alumni.picture}`}
-            style={{ height: "200px", width: "200px" }} // Set height and width to 200px
-            alt={alumni.name}
-          />
-          <div className="alumni-details">
-            <p>
-              Name: {alumni.firstname} {alumni.lastname}
-            </p>
-            <p>Email: {alumni.email}</p>
-            <p>Major: {alumni.major}</p>
-          </div>
-        </div>
-      ))}
-    </div>
+    <Container maxWidth="lg">
+      <Typography
+        variant="h2"
+        component="h2"
+        gutterBottom
+        align="center"
+        style={{ marginTop: "100px" }}
+      >
+        Alumni
+      </Typography>
+      <Grid container spacing={4}>
+        {alumniArray.map((alumni) => (
+          <Grid item xs={12} sm={6} md={4} key={alumni.id}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="200"
+                image={`data:image/jpeg;base64,${alumni.picture}`}
+                alt={alumni.name}
+              />
+              <CardContent>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                >
+                  <Typography gutterBottom variant="h5" component="div">
+                    {alumni.firstname} {alumni.lastname}
+                  </Typography>
+                  <Link
+                    href={alumni.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LinkedInIcon fontSize="large" />
+                  </Link>
+                </Box>
+                <Typography variant="body2" color="text.secondary">
+                  Email: {alumni.email}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Major: {alumni.major}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
   );
 };
-
 export default Alumni;
