@@ -6,7 +6,7 @@ import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListI
 const USA = () => {
     const styles = {
         mainContent: {
-            minWidth: '100vw',
+            // minWidth: '100vw',
             minHeight: '100vh',
             display: 'flex',
             flexDirection: 'column',
@@ -25,6 +25,7 @@ const USA = () => {
             maxWidth: '800px',
             width: '100%',
             boxSizing: 'border-box',
+            marginTop: '60px',
         },
         testImage: {
             maxWidth: '100%',

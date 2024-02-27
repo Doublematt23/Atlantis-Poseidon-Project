@@ -6,7 +6,7 @@ import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListI
 const France = () => {
     const styles = {
         mainContent: {
-            minWidth: '100vw',
+            // minWidth: '100vw',
             minHeight: '100vh',
             display: 'flex',
             flexDirection: 'column',
@@ -21,6 +21,7 @@ const France = () => {
         contentStyle: {
             backgroundColor: 'rgba(255, 255, 255, 0.5)',
             padding: '20px',
+            marginTop: '60px',
             borderRadius: '10px',
             maxWidth: '800px',
             width: '100%',

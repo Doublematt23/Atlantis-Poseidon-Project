@@ -1,7 +1,11 @@
+import PersonList from "../components/PersonList";
+
 const Alumni = () => {
     return (
         <div class="main-content">
             <h2 class="center-heading">Alumni</h2>
+
+            <PersonList></PersonList>
 
             <div class="program-section">
                 <img src="alumni1.jpg" alt="Alumni 1" />
@@ -30,5 +34,5 @@ const Alumni = () => {
         </div>
     );
 };
- 
+
 export default Alumni;

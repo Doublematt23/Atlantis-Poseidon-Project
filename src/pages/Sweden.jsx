@@ -6,7 +6,7 @@ import { MainContent, Heading, SubHeading, IntroParagraph, List, ListItem } from
 const Sweden = () => {
     const styles = {
         mainContent: {
-            minWidth: '100vw', // Ensures the width is at least 100% of the viewport width
+            // minWidth: '100vw', // Ensures the width is at least 100% of the viewport width
             minHeight: '100vh', // Ensures the height is at least 100% of the viewport height
             display: 'flex',
             flexDirection: 'column',
@@ -25,6 +25,7 @@ const Sweden = () => {
             maxWidth: '800px', // Maximum width of the content block
             width: '100%', // Use up to 100% of the width of its parent
             boxSizing: 'border-box', // Include padding in the width and height
+            marginTop: '60px',
         },
         bulletPoint: {
             fontWeight: 'bold',

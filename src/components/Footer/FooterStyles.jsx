@@ -18,6 +18,8 @@ export const FooterContainer = styled.div`
     text-align: center;
     max-width: 95%;
     margin: 0 auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
     // background: red; 
     
 `;
@@ -40,7 +42,7 @@ export const Facebox = styled.div`
 
 export const FaceboxManager = styled.div`
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: left;
 gap: 20px;
 
