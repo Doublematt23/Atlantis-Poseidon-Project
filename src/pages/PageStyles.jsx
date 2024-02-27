@@ -59,6 +59,24 @@ export const ListItem = styled.li`
     border-left: 5px solid #0000ff; 
 `;
 
+export const ListItemFrance = styled.li`
+    background: #ffffff;
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    border-left: 5px solid #FF0000; 
+`;
+
+export const ListItemSweden = styled.li`
+    background: #ffffff;
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    border-left: 5px solid #ffd700; 
+`;
+
 export const SectionContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.7); // White background with slight transparency
     border-radius: 8px; // Rounded corners for the box
