@@ -55,5 +55,6 @@ export const ListItem = styled.li`
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-    border-left: 5px solid #ff0000;
+    border-left: 5px solid #0000ff; 
 `;
+
