@@ -1,6 +1,6 @@
 import React from 'react';
 import titlePic from "/src/assets/np2.jpg";
-import usClassPic from "/src/assets/cta.jpg"; // Import for the US class image
+import usClassPic from "/src/assets/cta.png"; // Import for the US class image
 import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListItem } from "./PageStyles";
 
 const ChicagoAttractions = () => {
