@@ -19,6 +19,9 @@ const Navbar = () => {
                     <NavLink to="/Alumni" activeStyle>
                         Alumni
                     </NavLink>
+                    <NavLink to ="/ChicagoAttractions" activeStyle>
+                                Chicago Attractions
+                    </NavLink>
                     <li class="dropdown"><strong>Application Info</strong>
                         <div class="dropdown-content">
                             <NavLink to="/Apply" activeStyle>
