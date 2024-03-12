@@ -28,7 +28,7 @@ const Navbar = () => {
                             Apply
                             </NavLink>
                             <NavLink to="/Timeline" onClick={() => loadEvents()} activeStyle>
-                            Application Timeline
+                            Timeline
                             </NavLink>
                         </div>
                     </li>
