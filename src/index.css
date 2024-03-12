@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: #044d7e; /* Blue header background */
+  /* background-color: red; Blue header background */
   color: white;
   padding: 15px;
   display: flex;
@@ -91,7 +91,7 @@ nav a {
 }
 
 footer {
-  background-color: #044d7e;
+  /* background-color: red; */
   color: white;
   padding: 20px;
   display: flex;
@@ -174,13 +174,15 @@ footer {
 /* Dropdown Menu Styles */
 .dropdown {
   position: relative;
+  /* background: red; */
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #808080;
 
   @media screen and (max-width: 768px) {
-    background: #044d7e;
+    /* background: red; */
     width: 100%;
     text-align: center;
     /* background: red; */
@@ -193,18 +195,21 @@ footer {
 }
 
 .dropdown-content {
+  margin-top: 50px;
   display: none;
   position: absolute;
+  top: 0;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
   z-index: 1;
 
 
 }
 
 .dropdown-content a {
-  color: black;
+  background: #044d7e;
+  /* color: black; */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
