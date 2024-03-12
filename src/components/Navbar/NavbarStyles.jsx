@@ -4,6 +4,11 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: #044d7e;
+    /*
+    depaul school colors
+    red #E4002B
+    blue #005EB8
+    */
     
     height: 60px;
     display: flex;

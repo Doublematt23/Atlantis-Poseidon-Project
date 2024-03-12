@@ -13,18 +13,18 @@ const Navbar = () => {
                 <NavButton onClick={() => toggleBurger()} id="burgerButton">≡</NavButton>
 
                 <NavMenu>
-                    <NavLink to="/" activeStyle>
+                    <NavLink to="/" onClick={() => loadScreen()} activeStyle>
                         Home
                     </NavLink> 
-                    <NavLink to="/Alumni" activeStyle>
+                    <NavLink to="/Alumni" onClick={() => loadScreen()} activeStyle>
                         Alumni
                     </NavLink>
-                    <NavLink to ="/ChicagoAttractions" activeStyle>
+                    <NavLink to ="/ChicagoAttractions" onClick={() => loadScreen()} activeStyle>
                                 Chicago Attractions
                     </NavLink>
                     <li class="dropdown"><strong>Application Info</strong>
                         <div class="dropdown-content">
-                            <NavLink to="/Apply" activeStyle>
+                            <NavLink to="/Apply" onClick={() => loadScreen()} activeStyle>
                             Apply
                             </NavLink>
                             <NavLink to="/Timeline" onClick={() => loadEvents()} activeStyle>
@@ -34,13 +34,13 @@ const Navbar = () => {
                     </li>
                     <li class="dropdown"><strong>Countries</strong>
                         <div class="dropdown-content">
-                            <NavLink to="/USA" activeStyle>
+                            <NavLink to="/USA" onClick={() => loadScreen()} activeStyle>
                                 USA
                             </NavLink>
-                            <NavLink to="/France" activeStyle>
+                            <NavLink to="/France" onClick={() => loadScreen()} activeStyle>
                                 France
                             </NavLink>
-                            <NavLink to="/Sweden" activeStyle>
+                            <NavLink to="/Sweden" onClick={() => loadScreen()} activeStyle>
                                 Sweden
                             </NavLink>
                         </div>
