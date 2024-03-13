@@ -2,8 +2,10 @@ import { Nav, NavLink, NavMenu, NavButton, NavHeader } from "./NavbarStyles";
 import logo from "/src/assets/Logo.png";
 import { useEffect, useState } from "react";
 
+import { useAuth } from "../../context/AuthContext";
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+//  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { isLoggedIn } = useAuth();
 
   useEffect(() => {
     const token = localStorage.getItem("token");

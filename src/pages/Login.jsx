@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom"; // Step 1: Import useNavigate
+import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
+  const { setIsLoggedIn } = useAuth();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate(); // Step 2: Create a navigate function
@@ -36,6 +39,7 @@ const Login = () => {
     if (response.status === 200) {
       localStorage.setItem("token", response.data.token); // Save the token in localStorage
       alert("Login successful.");
+    setIsLoggedIn(true); // Update the login status
       navigate("/"); // Step 3: Navigate to /Home
     } else {
       console.log(response);
