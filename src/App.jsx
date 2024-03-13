@@ -15,6 +15,7 @@ import France from "./pages/France.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Sweden from "./pages/Sweden.jsx";
 import Login from "./pages/Login.jsx";
+import Logout from "./pages/Logout.jsx";
  
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                     <Route path="/France" element={<France />} />
                     <Route path="/Sweden" element={<Sweden />} />
                     <Route path ="/Login" element={<Login />} />
+                    <Route path ="/Logout" element={<Logout />} />
                 </Routes>
             </Router>
 

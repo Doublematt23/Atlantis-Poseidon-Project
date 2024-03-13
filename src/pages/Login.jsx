@@ -1,21 +1,46 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { Box, Button, TextField, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom"; // Step 1: Import useNavigate
 
 const Login = () => {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // Step 2: Create a navigate function
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    // Add your authentication logic here
+    console.log(username, password);
+    const response = await axios.post(
+      "http://34.204.247.99/login.php",
+      {
+        username: username,
+        password: password,
+      },
+
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log(response);
+    if (response.status === 200) {
+      localStorage.setItem("token", response.data.token); // Save the token in localStorage
+      alert("Login successful.");
+      navigate("/"); // Step 3: Navigate to /Home
+    } else {
+      console.log(response);
+      alert("Login failed.");
+    }
   };
 
   return (
@@ -42,10 +67,10 @@ const Login = () => {
         }}
       >
         <TextField
-          type="email"
-          label="Email"
-          value={email}
-          onChange={handleEmailChange}
+          type="Username"
+          label="Username"
+          value={username}
+          onChange={handleUsernameChange}
           required
         />
         <TextField

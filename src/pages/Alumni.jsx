@@ -19,11 +19,13 @@ const Alumni = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      const token = localStorage.getItem("token");
       try {
-        const response = await axios.get("https://34.204.247.99/read.php");
+        const response = await axios.get("http://34.204.247.99/read.php", {
+          method: "GET",
+        });
         setAlumniArray(response.data);
-        setLoading(false); // Set loading to false after data is fetched
-        console.log(response.data);
+        setLoading(false); 
       } catch (error) {
         console.error(error);
       }
