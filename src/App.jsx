@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Sweden from "./pages/Sweden.jsx";
 import Login from "./pages/Login.jsx";
 import Logout from "./pages/Logout.jsx";
+import ChicagoAttractions from "./pages/ChicagoAttractions.jsx";
  
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                     <Route path="/Sweden" element={<Sweden />} />
                     <Route path ="/Login" element={<Login />} />
                     <Route path ="/Logout" element={<Logout />} />
+                    <Route path="/ChicagoAttractions" element={<ChicagoAttractions />} />
                 </Routes>
             </Router>
 

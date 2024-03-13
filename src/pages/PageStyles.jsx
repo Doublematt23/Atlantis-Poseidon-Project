@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import homeBackgroundPlane from "/src/assets/planePic.jpg";
 
 export const MainContent = styled.div`
     font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -55,5 +56,40 @@ export const ListItem = styled.li`
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-    border-left: 5px solid #ff0000;
+    border-left: 5px solid #0000ff; 
+`;
+
+export const ListItemFrance = styled.li`
+    background: #ffffff;
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    border-left: 5px solid #FF0000; 
+`;
+
+export const ListItemSweden = styled.li`
+    background: #ffffff;
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    border-left: 5px solid #ffd700; 
+`;
+
+export const SectionContainer = styled.div`
+    background-color: rgba(255, 255, 255, 0.7); // White background with slight transparency
+    border-radius: 8px; // Rounded corners for the box
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Box shadow for a slight 3D effect
+    padding: 20px; // Padding inside the box, so the content doesn't touch the edges
+    margin-bottom: 30px; // Margin at the bottom of each box to separate them from each other
+`;
+
+export const BackgroundWrapper = styled.div`
+    width: 100%;
+    min-height: 100vh; // Make sure it covers at least the whole viewport height
+    background-image: url(${homeBackgroundPlane});
+    background-size: cover; // Cover the entire page
+    background-position: center; // Center the background image
+    background-repeat: no-repeat; // Do not repeat the image
 `;
