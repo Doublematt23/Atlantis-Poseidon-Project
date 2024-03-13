@@ -1,10 +1,10 @@
 const Timeline = () => {
     return (
         <>
-            <div class="main-content">
-                <div class="vertical-timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-box">
+            <div className="main-content">
+                <div className="vertical-timeline">
+                    <div className="timeline-item">
+                        <div className="timeline-box">
                             <h3>Atlantis Timeline</h3>
                             <p></p>
                         </div>
@@ -33,7 +33,7 @@ function addEvent(eventName, eventDate) {
     const newTimelineItem = document.createElement('div');
     newTimelineItem.className = 'timeline-item';
     newTimelineItem.innerHTML = `
-        <div class="timeline-box">
+        <div className="timeline-box">
             <h3>${eventName}</h3>
             <p>${eventDate}</p>
         </div>`;
