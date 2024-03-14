@@ -1,3 +1,5 @@
+//Matthew Kaukialo
+
 import React from 'react';
 import titlePic from "/src/assets/INSEEC.jpg";
 import franceClassPic from "/src/assets/FranceClass.jpg"; // Import for the additional France class image
