@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 
 export const Nav = styled.nav`
-    background: #044d7e;
+    background: rgb(4, 77, 126, .9);
+    -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+    /* background: rgb(0, 0, 0, 0); */
     /*
     depaul school colors
     red #E4002B
@@ -29,7 +32,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
     // width: 100%;
-    color: #808080;
+    color: rgb(246, 246, 246);;
     display: flex;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
@@ -42,9 +45,13 @@ export const NavLink = styled(Link)`
     &.active {
         //set color of active button
         color: #ff8c00;
+        border-bottom: 2px solid #ff8c00;
     }
     @media screen and (max-width: 768px) {
-        background: #044d7e;
+        /* background: #044d7e; */
+        background: rgb(4, 77, 126, .85);
+    -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
         box-sizing: border-box;
         width:100%;
         justify-content: center;
@@ -69,6 +76,9 @@ export const NavLinkBurgerDrop = styled(NavLinkBurger)`
 
 export const NavHeader = styled.h1`
 //  font-size: 16;
+display: flex;
+  align-items: center;
+  color: white;
 `;
 
 export const DropdownContentBurger = styled.div`
@@ -76,10 +86,6 @@ display: flex;
 position: relative;
 flex-direction: column;
 width: 100%;
-// background-color: #f9f9f9;
-// min-width: 160px;
-// box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-// z-index: 1;
 `;
 
 export const DropdownBurger = styled.button`
@@ -94,7 +100,10 @@ export const DropdownBurger = styled.button`
     font-weight: bold;
     font-size: 16px;
     @media screen and (max-width: 768px) {
-      background: #044d7e;
+      /* background: #044d7e; */
+      background: rgb(4, 77, 126, .85);
+    -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
       width:100%;
       text-align: center;
       height: 50px;
@@ -146,7 +155,7 @@ export const NavButton = styled.button`
         width: 60px;
         height: 50px;
         margin-right: 5px;
-        background: #044d7e;
+        background: rgb(0,0,0,0);
         color: white;
         border: none;
         font-size: 30px;

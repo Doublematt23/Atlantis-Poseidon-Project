@@ -1,6 +1,5 @@
 import { Nav, NavLink, NavMenu, NavButton, NavHeader } from "./NavbarStyles";
 import logo from "/src/assets/Logo.png";
-import { useEffect } from "react";
 
 import { useAuth } from "../../context/AuthContext";
 const Navbar = () => {
@@ -21,6 +20,9 @@ const Navbar = () => {
         <NavMenu>
           <NavLink to="/" activeStyle>
             Home
+          </NavLink>
+          <NavLink to="ChicagoAttractions" activeStyle>
+            Chicago
           </NavLink>
           {isLoggedIn ? (
             <NavLink to="/Alumni" activeStyle>
