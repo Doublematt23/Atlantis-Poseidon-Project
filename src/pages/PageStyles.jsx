@@ -1,9 +1,14 @@
 //Michael Cullen
+//Matthew Kaukialo
+// Import NavLink from react-router-dom for navigation links
 import { NavLink as Link } from "react-router-dom";
+// Import styled-components for styling our components
 import styled from "styled-components";
+// Import images to be used as backgrounds
 import homeBackgroundPlane from "/src/assets/planePic.jpg";
 import LandingPic from "/src/assets/LyonNight1.jpeg";
 
+// Main content container with styled div element
 export const MainContent = styled.div`
     font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     max-width: 800px;
@@ -16,6 +21,7 @@ export const MainContent = styled.div`
     box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 `;
 
+// Heading styled h2 element
 export const Heading = styled.h2`
     color: #333;
     font-size: 24px;
@@ -23,6 +29,7 @@ export const Heading = styled.h2`
     margin: 20px 0;
 `;
 
+// Image style for consistent look across the site
 export const ImgStyle = styled.img`
     max-width: 100%;
     border-radius: 5px;
@@ -32,6 +39,7 @@ export const ImgStyle = styled.img`
     margin-top: 20px;
 `;
 
+// Subheading styled div for minor titles
 export const SubHeading = styled.div`
     font-size: 18px;
     color: #555;
@@ -39,6 +47,7 @@ export const SubHeading = styled.div`
     margin: 10px 0px 20px;
 `;
 
+// Introductory paragraph styling
 export const IntroParagraph = styled.p`
     color: #666;
     line-height: 1.6;
@@ -46,38 +55,44 @@ export const IntroParagraph = styled.p`
     margin-top: 20px;
 `;
 
+// List styling without bullet points
 export const List = styled.ul`
     list-style-type: none;
     padding: 0px;
     margin: 20px 0px;
 `;
 
+// ListItem styling for each item in the list
 export const ListItem = styled.li`
     background: #ffffff;
     margin: 10px 0px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-    border-left: 5px solid #0000ff; 
+    border-left: 5px solid #0000ff; // Blue left border indicating a general item
 `;
 
+// Styled list item for France with a specific color
 export const ListItemFrance = styled.li`
     background: #ffffff;
     margin: 10px 0px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-    border-left: 5px solid #FF0000; 
+    border-left: 5px solid #FF0000; // Red left border indicating an item related to France
 `;
 
+// Styled list item for Sweden with a specific color
 export const ListItemSweden = styled.li`
     background: #ffffff;
     margin: 10px 0px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-    border-left: 5px solid #ffd700; 
+    border-left: 5px solid #ffd700; // Gold left border indicating an item related to Sweden
 `;
+
+// MapBox component with specific background and styling for displaying maps
 export const MapBox = styled.div`
     background: white;
     background-image: url(/src/assets/RoadTrip.png);
@@ -97,23 +112,26 @@ export const MapBox = styled.div`
     }
 `;
 
+// SectionContainer for wrapping sections of content with specific styling
 export const SectionContainer = styled.div`
-    background-color: rgba(244, 244, 244, 0.9); // White background with slight transparency
-    border-radius: 8px; // Rounded corners for the box
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Box shadow for a slight 3D effect
-    padding: 20px; // Padding inside the box, so the content doesn't touch the edges
-    margin-bottom: 30px; // Margin at the bottom of each box to separate them from each other 
+    background-color: rgba(244, 244, 244, 0.9);
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 30px;
 `;
+
+// IndexSectionContainer for special section containers with specific dimensions and styling
 export const IndexSectionContainer = styled.div`
-    border-radius: 13px; // Rounded corners for the box
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Box shadow for a slight 3D effect
-    margin-bottom: 30px; // Margin at the bottom of each box to separate them from each other 
+    border-radius: 13px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
     width: 300px;
     height: 600px;
-    background-position: center; 
-
-
+    background-position: center;
 `;
+
+// IndexSectionBackground for styling the background of index sections with hover effect
 export const IndexSectionBackground = styled.div`
     display: flex;
     flex-direction: column;
@@ -129,24 +147,27 @@ export const IndexSectionBackground = styled.div`
     }
 `;
 
-
+// BackgroundWrapper for full-width background images
 export const BackgroundWrapper = styled.div`
     width: 100%;
-    min-height: 100vh; // Make sure it covers at least the whole viewport height
+    min-height: 100vh; 
     background-image: url(${homeBackgroundPlane});
-    background-size: cover; // Cover the entire page
-    background-position: center; // Center the background image
-    background-repeat: no-repeat; // Do not repeat the image
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 `;
 
+// LandingBackgroundWrapper for the landing page's background
 export const LandingBackgroundWrapper = styled.div`
     width: 100%;
     height: 100vh;
     padding-bottom: 20px;
     background-image: url(${LandingPic});
     background-size: cover;
-    background-repeat: no-repeat; // Do not repeat the image
+    background-repeat: no-repeat; 
 `;
+
+// LandingWelcome for styling the welcome section on the landing page
 export const LandingWelcome = styled.div`
     padding-top: 20vh;
     padding-left: 10%;
@@ -154,6 +175,7 @@ export const LandingWelcome = styled.div`
     display: flex;
 `;
 
+// LandingSectionContainer for styling the section container on the landing page
 export const LandingSectionContainer = styled.div`
     padding: 20px;
     padding-right: 30px;
@@ -161,15 +183,13 @@ export const LandingSectionContainer = styled.div`
     padding-bottom: 40px;
     width: 650px;
     max-width:85%;
-    
-    //gradient text box at top of homepage
     background: linear-gradient(to right, rgba(244, 244, 244,.8) .85%, rgba(244, 244, 244,.8) 25%,  rgba(244, 244, 244,.8) 35%, rgba(244, 244, 244,.8) 50%, rgba(244, 244, 244,.8) 65%, rgba(244, 244, 244,.8) 75%, rgba(244, 244, 244,.8) 85%, rgba(244, 244, 244,0) 100%);
-    
     border-left: .5rem solid;
     border-color: #044d7e;
     color: #044d7e;
 `;
 
+// LearnButton styled component for a button that utilizes Link for navigation
 export const LearnButton = styled(Link)`
     background: #044d7e;
     padding: 15px;

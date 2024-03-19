@@ -40,7 +40,8 @@ const Sweden = () => {
             paddingBottom: '20px', // Space below the image
         },
     };
-
+    
+    // JSX to render for the component
     return (
         <div style={styles.mainContent}> {/* Apply the background image styling here */}
             <div style={styles.contentStyle}> {/* Apply semi-transparent background to this block */}
@@ -61,4 +62,5 @@ const Sweden = () => {
     );
 };
 
+// Export the Sweden component for use in other parts of the application
 export default Sweden;
