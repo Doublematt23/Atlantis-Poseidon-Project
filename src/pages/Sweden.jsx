@@ -1,3 +1,5 @@
+//Matthew Kaukialo
+
 import React from 'react';
 import titlePic from "/src/assets/SwedenClass.jpg"; // This is the background image
 import testPic from "/src/assets/Sweden.jpg"; 
