@@ -7,9 +7,12 @@ import {
     NavLinkBurger,
     NavMenuBurger
 } from "./NavbarStyles";
+import { useAuth } from "../../context/AuthContext";
 
 //menu only present in mobile view
 const NavbarBurger = () => {
+    const { isLoggedIn } = useAuth();
+    
     return (
         <>
             <NavMenuBurger id="NavBurger">
@@ -17,11 +20,16 @@ const NavbarBurger = () => {
                 <NavLinkBurger id="NavLinkBurger" onClick={() => loadScreen()} to="/" activeStyle>
                     Home
                 </NavLinkBurger>
+
+                <NavLinkBurger to="ChicagoAttractions" activeStyle>
+                    Chicago
+                </NavLinkBurger>
+
                 <NavLinkBurger to="/Alumni" onClick={() => loadScreen()} activeStyle>
                     Alumni
                 </NavLinkBurger>
 
-                <DropdownBurger onClick={() => toggleMenu()}><strong>Application Info</strong></DropdownBurger>
+                <DropdownBurger style={{ color: "white" }} onClick={() => toggleMenu()}><strong>Application Info</strong></DropdownBurger>
                 <DropdownContentBurger id="hidden" style={{ display: 'none' }}>
                     <NavLinkBurgerDrop to="/Apply" onClick={() => loadScreen()} activeStyle>
                         Apply
@@ -31,7 +39,7 @@ const NavbarBurger = () => {
                     </NavLinkBurgerDrop>
                 </DropdownContentBurger>
 
-                <DropdownBurger onClick={() => toggleMenu1()}><strong>Countries</strong></DropdownBurger>
+                <DropdownBurger style={{ color: "white" }} onClick={() => toggleMenu1()}><strong>Countries</strong></DropdownBurger>
                 <DropdownContentBurger id="hidden1" style={{ display: 'none' }}>
                     <NavLinkBurgerDrop to="/USA" onClick={() => loadScreen()} activeStyle>
                         USA
@@ -46,6 +54,10 @@ const NavbarBurger = () => {
 
                 <NavLinkBurger to="/Help" onClick={() => loadScreen()} activeStyle>
                     Help
+                </NavLinkBurger>
+
+                <NavLinkBurger to={!isLoggedIn ? "/Login" : "/Logout"} activeStyle>
+                    {isLoggedIn ? "Logout" : "Login"}
                 </NavLinkBurger>
             </NavMenuBurger>
         </>
