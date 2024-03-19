@@ -1,4 +1,5 @@
-//Matthew Kaukialo
+//Matthew Kaukialo 100 perecent
+//Webpage to display info about the study abroad experience offered by Atlantis in Sweden 
 
 import React from 'react';
 import titlePic from "/src/assets/SwedenClass.jpg"; // This is the background image

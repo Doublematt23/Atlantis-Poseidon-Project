@@ -1,4 +1,5 @@
-//Matthew Kaukialo
+//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
+//Webpage to display info about the study abroad experience offered by Atlantis in France
 
 // Import the React library for creating the component
 import React from 'react';

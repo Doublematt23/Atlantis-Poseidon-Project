@@ -1,4 +1,6 @@
-//Matthew Kaukialo
+//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
+// This page describes the attractions in Chicago and information for staying safe and having fun in Chicago
+
 
 // Import React for component creation
 import React from 'react';

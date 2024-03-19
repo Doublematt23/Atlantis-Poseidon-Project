@@ -1,4 +1,5 @@
-//Matthew Kaukialo
+//Matthew Kaukialo 100 percent 
+//This page gives information for people to of how and were to apply and contact and finanical information
 
 // Import React to build a component using JSX syntax
 import React from 'react';

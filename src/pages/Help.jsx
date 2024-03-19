@@ -1,4 +1,6 @@
-//Matthew Kaukialo
+//Matthew Kaukialo 100 percent
+//Webpage to display info about were students to get help about additional about Atlantis Program
+
 import React from 'react';
 
 // Updated CSS styles with blue theme
