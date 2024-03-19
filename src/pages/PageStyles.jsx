@@ -2,6 +2,7 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import homeBackgroundPlane from "/src/assets/planePic.jpg";
 import LandingPic from "/src/assets/LyonNight1.jpeg";
+import Pastel from "/src/assets/USA.png";
 //lyon night 1 & 2, 
 //Linkoping 5? & 6
 
@@ -79,6 +80,25 @@ export const ListItemSweden = styled.li`
     box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
     border-left: 5px solid #ffd700; 
 `;
+export const MapBox = styled.div`
+/* height: 100vh; */
+background: white;
+background-image: url(/src/assets/RoadTrip.png);
+background-repeat: no-repeat;
+background-size: 130% auto;
+background-position: top -11px right -66px;
+max-width: 600px;
+height: 350px; 
+display: block;
+margin: auto;
+margin-bottom: 80px;
+width: 50%;
+border-radius: 50px;
+border: 1.5px solid black;
+@media screen and (max-width: 1200px) {
+        display: none;
+    }
+`;
 
 export const SectionContainer = styled.div`
     background-color: rgba(244, 244, 244, 0.9); // White background with slight transparency
@@ -87,6 +107,32 @@ export const SectionContainer = styled.div`
     padding: 20px; // Padding inside the box, so the content doesn't touch the edges
     margin-bottom: 30px; // Margin at the bottom of each box to separate them from each other 
 `;
+export const IndexSectionContainer = styled.div`
+    border-radius: 13px; // Rounded corners for the box
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Box shadow for a slight 3D effect
+    margin-bottom: 30px; // Margin at the bottom of each box to separate them from each other 
+    width: 300px;
+    height: 600px;
+    background-position: center; 
+
+
+`;
+export const IndexSectionBackground = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 30px;
+    border-radius: 13px;
+    color: rgba(255, 255, 255, 0);
+    &:hover{
+        background: rgba(255, 255, 255, 0.7);
+        color: rgba(0, 0, 0, 1);
+    }
+
+`;
+
 
 export const BackgroundWrapper = styled.div`
     width: 100%;
@@ -100,8 +146,9 @@ export const BackgroundWrapper = styled.div`
 export const LandingBackgroundWrapper = styled.div`
     width: 100%;
     height: 100vh;
+    padding-bottom: 20px;
     background-image: url(${LandingPic});
-    background-size: cover; 
+    background-size: cover;
     /* background-position: center; // Center the background image */
     background-repeat: no-repeat; // Do not repeat the image
 `;
@@ -112,8 +159,10 @@ export const LandingWelcome = styled.div`
     /* padding: 20px; */
     
     padding-top: 20vh;
-    padding-left: 5%;
-    font-size: 30px;
+    /* padding-bottom: 20vh; */
+    padding-left: 10%;
+    max-height: 80vh;
+    /* font-size: 30px; */
     
     display: flex;
     /* flex-direction: column; */
@@ -137,20 +186,17 @@ padding-bottom: 40px;
 `;
 
 export const LearnButton = styled(Link)`
-background: #044d7e;
-    /* padding: 0 1rem; */
+    background: #044d7e;
     padding: 15px;
-    /* margin-bottom: 400px; */
     text-decoration: none;
-color: white;
-/* width: 200px; */
-/* height:60px; */
-border-radius: 10px;
-font-size: 16px;
-border:none;
-font-family: "Tahoma";
-&:active{
-    filter: brightness(90%);
-}
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    border:none;
+    font-family: "Tahoma";
+    text-align: center;
+    &:active{
+        filter: brightness(90%);
+    }
     
 `;

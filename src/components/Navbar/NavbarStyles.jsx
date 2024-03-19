@@ -32,7 +32,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
     // width: 100%;
-    color: rgb(246, 246, 246);;
+    color: rgb(246, 246, 246);
     display: flex;
     font-family: 'Arial', sans-serif;
     font-weight: bold;

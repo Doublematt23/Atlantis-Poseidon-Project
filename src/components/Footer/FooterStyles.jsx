@@ -36,7 +36,7 @@ export const Facebox = styled.div`
     display: flex;
     align-items: center;
     text-align: left;
-    gap: 20px;
+    gap: 10px;
     
 `;
 
@@ -52,9 +52,9 @@ export const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
-        minmax(280px, 1fr)
+        minmax(320px, 1fr)
     );
-    gap: 20px;
+    gap: 5px;
 `;
  
 export const FooterLink = styled.a`
