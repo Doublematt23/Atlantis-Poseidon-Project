@@ -16,14 +16,7 @@
         (TROUBLESHOOTING:
         If the "npm run dev" command spits out the error message "sh: vite: command not found", try deleting the package-lock.json folder, rerun "npm install" first, and then run "npm run dev" again)
     
-you are now running a local server in the terminal
-
-allow google chrome to open the webpage if necessary
-
-all changes (once saved) will be automatically update on the website
-    
-        
-    
+allow google chrome to open the webpage or press o+enter
 
 
 

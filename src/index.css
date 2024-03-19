@@ -5,26 +5,14 @@ body {
   padding: 0;
   font-family: 'Arial', sans-serif;
   background-color: rgb(246, 246, 246); 
-  
-  /* potential background image */
-  /* background-image:url("/src/assets/visit_virtually_bg.jpeg");
-  height: 75%;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;  */
-
 
   /* locks the footer to the bottom of the page */
   min-height: 100vh;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
-  /* position: relative; */
-
 }
 
 header {
-  /* background-color: red; Blue header background */
   color: white;
   padding: 15px;
   display: flex;
@@ -96,7 +84,6 @@ nav a {
 }
 
 footer {
-  /* background-color: red; */
   color: white;
   padding: 20px;
   display: flex;
@@ -160,12 +147,6 @@ footer {
   color: #ff8c00;
 }
 
-/* 
-.alumni-item {
-    display: flex;
-    margin-bottom: 20px;
-} */
-
 .alumni-item img {
   width: 150px;
   height: auto;
@@ -179,7 +160,6 @@ footer {
 /* Dropdown Menu Styles */
 .dropdown {
   position: relative;
-  /* background: red; */
   height: 50px;
   display: flex;
   justify-content: center;
@@ -188,14 +168,9 @@ footer {
   
 
   @media screen and (max-width: 768px) {
-    /* background: red; */
     width: 100%;
     text-align: center;
-    /* background: red; */
     height: 50px;
-    /* padding-top: 17px;
-      padding-bottom: 17px; */
-    /* margin: 1px; */
   }
 
 }
@@ -207,7 +182,6 @@ footer {
   top: 0;
   background-color: #f9f9f9;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
   z-index: 1;
 
 
@@ -215,20 +189,12 @@ footer {
 
 .dropdown-content a {
   background: #044d7e;
-  /* color: black; */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  
-
-  /* overwrite the navbar color change effect */
-  /* &.active {
-      color: black;
-    } */
 }
 
 .dropdown-content a:hover {
-  /* background-color: #ddd; */
   filter: brightness(90%);
 }
 
@@ -237,13 +203,9 @@ footer {
 }
 
 nav li {
-  /* margin-right: 20px; */
-
-  /* ensures the drop down menus have the same padding as the other navbar elements */
   padding: 0 1rem;
   color: #808080;
   cursor: pointer; /* Changes cursor to pointer on hover */
-
 }
 
 /* Adjust nav a to not affect dropdown content */

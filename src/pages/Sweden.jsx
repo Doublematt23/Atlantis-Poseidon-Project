@@ -8,7 +8,6 @@ import { MainContent, Heading, SubHeading, IntroParagraph, List, ListItemSweden 
 const Sweden = () => {
     const styles = {
         mainContent: {
-            // minWidth: '100vw', // Ensures the width is at least 100% of the viewport width
             minHeight: '100vh', // Ensures the height is at least 100% of the viewport height
             display: 'flex',
             flexDirection: 'column',

@@ -1,10 +1,8 @@
+//Michael Cullen
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import homeBackgroundPlane from "/src/assets/planePic.jpg";
 import LandingPic from "/src/assets/LyonNight1.jpeg";
-import Pastel from "/src/assets/USA.png";
-//lyon night 1 & 2, 
-//Linkoping 5? & 6
 
 export const MainContent = styled.div`
     font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -81,22 +79,21 @@ export const ListItemSweden = styled.li`
     border-left: 5px solid #ffd700; 
 `;
 export const MapBox = styled.div`
-/* height: 100vh; */
-background: white;
-background-image: url(/src/assets/RoadTrip.png);
-background-repeat: no-repeat;
-background-size: 130% auto;
-background-position: top -11px right -66px;
-max-width: 600px;
-height: 350px; 
-display: block;
-margin: auto;
-margin-bottom: 80px;
-width: 50%;
-border-radius: 50px;
-border: 1.5px solid black;
-@media screen and (max-width: 1200px) {
-        display: none;
+    background: white;
+    background-image: url(/src/assets/RoadTrip.png);
+    background-repeat: no-repeat;
+    background-size: 130% auto;
+    background-position: top -11px right -66px;
+    max-width: 600px;
+    height: 350px; 
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+    width: 50%;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    @media screen and (max-width: 1200px) {
+            display: none;
     }
 `;
 
@@ -130,7 +127,6 @@ export const IndexSectionBackground = styled.div`
         background: rgba(255, 255, 255, 0.7);
         color: rgba(0, 0, 0, 1);
     }
-
 `;
 
 
@@ -149,36 +145,25 @@ export const LandingBackgroundWrapper = styled.div`
     padding-bottom: 20px;
     background-image: url(${LandingPic});
     background-size: cover;
-    /* background-position: center; // Center the background image */
     background-repeat: no-repeat; // Do not repeat the image
 `;
 export const LandingWelcome = styled.div`
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
-    
-    /* padding: 20px; */
-    
     padding-top: 20vh;
-    /* padding-bottom: 20vh; */
     padding-left: 10%;
     max-height: 80vh;
-    /* font-size: 30px; */
-    
     display: flex;
-    /* flex-direction: column; */
-
 `;
 
 export const LandingSectionContainer = styled.div`
     padding: 20px;
-padding-right: 30px;
-padding-left: 30px;
-padding-bottom: 40px;
-
-
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
     width: 650px;
-  max-width:85%;
-  background: linear-gradient(to right, rgba(244, 244, 244,.8) .85%, rgba(244, 244, 244,.8) 25%,  rgba(244, 244, 244,.8) 35%, rgba(244, 244, 244,.8) 50%, rgba(244, 244, 244,.8) 65%, rgba(244, 244, 244,.8) 75%, rgba(244, 244, 244,.8) 85%, rgba(244, 244, 244,0) 100%);
+    max-width:85%;
+    
+    //gradient text box at top of homepage
+    background: linear-gradient(to right, rgba(244, 244, 244,.8) .85%, rgba(244, 244, 244,.8) 25%,  rgba(244, 244, 244,.8) 35%, rgba(244, 244, 244,.8) 50%, rgba(244, 244, 244,.8) 65%, rgba(244, 244, 244,.8) 75%, rgba(244, 244, 244,.8) 85%, rgba(244, 244, 244,0) 100%);
     
     border-left: .5rem solid;
     border-color: #044d7e;
@@ -197,6 +182,5 @@ export const LearnButton = styled(Link)`
     text-align: center;
     &:active{
         filter: brightness(90%);
-    }
-    
+    } 
 `;

@@ -1,3 +1,4 @@
+//Michael Cullen
 import Navbar from "./components/Navbar/Navbar.jsx";
 import NavbarBurger from "./components/Navbar/NavbarBurger.jsx";
 import {
@@ -17,7 +18,7 @@ import Sweden from "./pages/Sweden.jsx";
 import Login from "./pages/Login.jsx";
 import Logout from "./pages/Logout.jsx";
 import ChicagoAttractions from "./pages/ChicagoAttractions.jsx";
- 
+
 function App() {
     return (
         <>
@@ -26,6 +27,7 @@ function App() {
                 <Navbar />
                 <NavbarBurger />
                 <Routes>
+                    {/* main pages */}
                     <Route exact path="/" element={<Home />} />
                     <Route path="/Timeline" element={<Timeline />} />
                     <Route path="/Apply" element={<Apply />} />
@@ -34,8 +36,8 @@ function App() {
                     <Route path="/USA" element={<USA />} />
                     <Route path="/France" element={<France />} />
                     <Route path="/Sweden" element={<Sweden />} />
-                    <Route path ="/Login" element={<Login />} />
-                    <Route path ="/Logout" element={<Logout />} />
+                    <Route path="/Login" element={<Login />} />
+                    <Route path="/Logout" element={<Logout />} />
                     <Route path="/ChicagoAttractions" element={<ChicagoAttractions />} />
                 </Routes>
             </Router>

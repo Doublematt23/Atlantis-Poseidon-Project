@@ -1,12 +1,14 @@
+//Michael Cullen
 
-import { 
-    DropdownBurger, 
-    NavLinkBurgerDrop, 
-    DropdownContentBurger, 
-    NavLinkBurger, 
+import {
+    DropdownBurger,
+    NavLinkBurgerDrop,
+    DropdownContentBurger,
+    NavLinkBurger,
     NavMenuBurger
 } from "./NavbarStyles";
 
+//menu only present in mobile view
 const NavbarBurger = () => {
     return (
         <>
@@ -24,7 +26,7 @@ const NavbarBurger = () => {
                     <NavLinkBurgerDrop to="/Apply" onClick={() => loadScreen()} activeStyle>
                         Apply
                     </NavLinkBurgerDrop>
-                    <NavLinkBurgerDrop to="/Timeline"  onClick={() => loadEvents()} activeStyle>
+                    <NavLinkBurgerDrop to="/Timeline" onClick={() => loadEvents()} activeStyle>
                         Application Timeline
                     </NavLinkBurgerDrop>
                 </DropdownContentBurger>
@@ -37,7 +39,7 @@ const NavbarBurger = () => {
                     <NavLinkBurgerDrop to="/France" onClick={() => loadScreen()} activeStyle>
                         France
                     </NavLinkBurgerDrop>
-                    <NavLinkBurgerDrop to="/Sweden"  onClick={() => loadScreen()} activeStyle>
+                    <NavLinkBurgerDrop to="/Sweden" onClick={() => loadScreen()} activeStyle>
                         Sweden
                     </NavLinkBurgerDrop>
                 </DropdownContentBurger>
@@ -64,7 +66,7 @@ function toggleMenu() {
 }
 function toggleMenu1() {
     var hiddenMenu = document.getElementById("hidden1");
-    
+
     if (hiddenMenu.style.display == 'flex') {
         hiddenMenu.style.display = 'none';
     }

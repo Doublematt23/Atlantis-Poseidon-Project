@@ -1,4 +1,3 @@
-
 // Help Component with CSS styles included to ensure the page fills up one screen size by default.
 import React from 'react';
 

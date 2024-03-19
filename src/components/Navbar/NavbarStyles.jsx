@@ -1,33 +1,24 @@
+//Michael Cullen
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
+/*
+depaul school colors
+red #E4002B
+blue #005EB8
+*/
 
 export const Nav = styled.nav`
     background: rgb(4, 77, 126, .9);
     -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-    /* background: rgb(0, 0, 0, 0); */
-    /*
-    depaul school colors
-    red #E4002B
-    blue #005EB8
-    */
-    
+    backdrop-filter: blur(8px);
     height: 60px;
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    // padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
     box-shadow: 0px 6px 7px -7px black; 
-
-    // fun with transparency
-    // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    // filter: alpha(opacity=80);
-    // -moz-opacity: 0.80;
-    // -khtml-opacity: 0.8;
-    // opacity: 0.8;
 `;
 
 export const NavLink = styled(Link)`
@@ -43,15 +34,13 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     &.active {
-        //set color of active button
         color: #ff8c00;
         border-bottom: 2px solid #ff8c00;
     }
     @media screen and (max-width: 768px) {
-        /* background: #044d7e; */
         background: rgb(4, 77, 126, .85);
-    -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
         box-sizing: border-box;
         width:100%;
         justify-content: center;
@@ -65,6 +54,7 @@ export const NavLinkBurger = styled(NavLink)`
         display: none;
     }
 `;
+
 export const NavLinkBurgerDrop = styled(NavLinkBurger)`
 
     justify-content: left;
@@ -73,19 +63,17 @@ export const NavLinkBurgerDrop = styled(NavLinkBurger)`
 
 `;
 
-
 export const NavHeader = styled.h1`
-//  font-size: 16;
-display: flex;
-  align-items: center;
-  color: white;
+    display: flex;
+    align-items: center;
+    color: white;
 `;
 
 export const DropdownContentBurger = styled.div`
-display: flex;
-position: relative;
-flex-direction: column;
-width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
 `;
 
 export const DropdownBurger = styled.button`
@@ -100,14 +88,12 @@ export const DropdownBurger = styled.button`
     font-weight: bold;
     font-size: 16px;
     @media screen and (max-width: 768px) {
-      /* background: #044d7e; */
-      background: rgb(4, 77, 126, .85);
-    -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-      width:100%;
-      text-align: center;
-      height: 50px;
-
+        background: rgb(4, 77, 126, .85);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        width:100%;
+        text-align: center;
+        height: 50px;
     }
     
 
@@ -117,8 +103,8 @@ export const DropdownBurger = styled.button`
 `;
 
 export const DropdownButton = styled.div`
-display: flex;
-width:100%;
+    display: flex;
+    width:100%;
 
 `;
 
@@ -161,5 +147,4 @@ export const NavButton = styled.button`
         font-size: 30px;
     
     }
-    
 `;

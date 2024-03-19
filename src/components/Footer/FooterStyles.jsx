@@ -1,7 +1,8 @@
-//Matthew Kaukialo
+//Matthew Kaukialo & Michael Cullen
 
 import styled from "styled-components";
- 
+
+
 export const Box = styled.div`
     padding-bottom: 10px;
     background: #044d7e;
@@ -10,9 +11,8 @@ export const Box = styled.div`
     height: 100%;
     width: 100vw;
     margin-top: auto;
- 
 `;
- 
+
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ export const FooterContainer = styled.div`
     // background: red; 
     
 `;
- 
+
 export const Column = styled.div`
     display: flex;
     flex-direction: column;
@@ -43,13 +43,14 @@ export const Facebox = styled.div`
 `;
 
 export const FaceboxManager = styled.div`
-display: flex;
-flex-direction: row;
-align-items: left;
-gap: 20px;
-
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 20px;
 `;
- 
+
+
+//creates auto-adjusting grid for directors depending on screen width
 export const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(
@@ -58,7 +59,7 @@ export const Row = styled.div`
     );
     gap: 5px;
 `;
- 
+
 export const FooterLink = styled.a`
     color: #fff;
     margin-bottom: 20px;
@@ -70,7 +71,7 @@ export const FooterLink = styled.a`
         transition: 200ms ease-in;
     }
 `;
- 
+
 export const Heading = styled.p`
     font-size: 24px;
     color: #fff;
@@ -80,5 +81,4 @@ export const Heading = styled.p`
 export const Body = styled.p`
     font-size: 18px;
     color: #fff;
-    // margin-bottom: 40px;
 `;
