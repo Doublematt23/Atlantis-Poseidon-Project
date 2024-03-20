@@ -1,4 +1,4 @@
-//Matthew Kaukialo(70 Percent for much of styling and information for first few sprints and comments) & Michael Cullen
+//Matthew Kaukialo(70 Percent for much of styling and information for first few sprints and comments) & Michael Cullen(30% formatting)
 
 // Importing styled components from FooterStyles for consistent styling across the footer
 import {

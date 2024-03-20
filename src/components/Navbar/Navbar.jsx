@@ -1,4 +1,4 @@
-//Matthew Kaukialo(40 percent for logo, syling and providing how the pages were set up on PC also comments. Set up the outline which Micheal expanded on) & Michael Cullen
+//Matthew Kaukialo(40 percent for logo, syling and providing how the pages were set up on PC also comments. Set up the outline which Micheal expanded on) & Michael Cullen (60%)
 
 // Importing styled components for the Navbar layout and elements
 import { Nav, NavLink, NavMenu, NavButton, NavHeader } from "./NavbarStyles";

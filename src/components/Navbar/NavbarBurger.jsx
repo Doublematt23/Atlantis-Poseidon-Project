@@ -1,4 +1,4 @@
-//Michael Cullen
+//Michael Cullen 100% styling for mobile view
 
 import {
     DropdownBurger,

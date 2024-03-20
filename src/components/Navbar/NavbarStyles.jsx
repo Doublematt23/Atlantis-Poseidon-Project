@@ -1,4 +1,4 @@
-//Michael Cullen
+//Michael Cullen (100% styling)
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 

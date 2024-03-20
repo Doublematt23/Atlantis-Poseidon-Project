@@ -1,3 +1,4 @@
+//Michael Cullen (50% styling)
 import { MapBox, IndexSectionBackground, LandingBackgroundWrapper, LearnButton, LandingWelcome, IndexSectionContainer, LandingSectionContainer } from "./PageStyles";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useRef } from 'react';

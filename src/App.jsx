@@ -1,4 +1,4 @@
-//Michael Cullen
+//Michael Cullen (100% routing)
 import Navbar from "./components/Navbar/Navbar.jsx";
 import NavbarBurger from "./components/Navbar/NavbarBurger.jsx";
 import {
