@@ -1,4 +1,5 @@
 //Michael Cullen (50% styling)
+// Oskar Staszewski (30% styling, background image, information put into page, footer and header template)
 import { MapBox, IndexSectionBackground, LandingBackgroundWrapper, LearnButton, LandingWelcome, IndexSectionContainer, LandingSectionContainer } from "./PageStyles";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useRef } from 'react';

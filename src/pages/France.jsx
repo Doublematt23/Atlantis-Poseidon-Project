@@ -1,6 +1,6 @@
 //Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
 
-//Oskar Staszewski worked on around 50 percent of this code. Did all information gathering, background image.
+//Oskar Staszewski worked on around 50 percent of this code. Did all information gathering, background image, some styling.
 
 //Webpage to display info about the study abroad experience offered by Atlantis in France
 
