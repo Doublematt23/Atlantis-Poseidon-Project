@@ -20,21 +20,64 @@ const TimelineComponent = () => {
 
     fetchTimelineData();
   }, []);
-
   return (
     <Card
       style={{
-        marginTop: "100px",
-        margin: "20px",
+        marginTop: "50px",
+        padding: "20px",
         borderRadius: "15px",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+        boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+        background: "#f5f5f5",
       }}
     >
-      <Timeline mode="alternate">
+      <Timeline mode="alternate" style={{ marginTop: "20px" }}>
         {timelineData.map((item) => (
-          <Timeline.Item key={item.id} label={item.due_date} color="blue">
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+          <Timeline.Item
+            key={item.id}
+            label={
+              <span
+                style={{
+                  color: "#1890ff",
+                  fontSize: "16px",
+                  display: "block",
+                }}
+              >
+                {new Date(item.due_date).toLocaleDateString()}
+              </span>
+            }
+            color="blue"
+            style={{ paddingBottom: "20px" }}
+          >
+            <div
+              style={{
+                padding: "10px",
+                background: "#fff",
+                boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
+                borderRadius: "10px",
+                marginBottom: "10px",
+                textAlign: "center",
+              }}
+            >
+              <h1
+                style={{
+                  color: "#003a8c",
+                  fontSize: "36px",
+                  fontWeight: "600",
+                  marginBottom: "10px",
+                  marginTop: "10px",
+                }}
+              >
+                {item.title}
+              </h1>
+              <p
+                style={{
+                  color: "#545454",
+                  lineHeight: "1.5",
+                }}
+              >
+                {item.description}
+              </p>
+            </div>
           </Timeline.Item>
         ))}
       </Timeline>
