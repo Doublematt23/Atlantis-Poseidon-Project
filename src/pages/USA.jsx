@@ -1,5 +1,5 @@
 //Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
-//Zain Qureshi worked around 50 percent for this code. Commented his portion of code, found images to use, gathered information to displayon webpage 
+//Zain Qureshi worked around 50 percent for this code. Commented his portion of code in HTML, found images to use, gathered information to display on webpage 
 //Webpage to display info about the study abroad experience offered by Atlantis in USA
 
 
@@ -51,7 +51,7 @@ const USA = () => {
     return (
         <div style={styles.mainContent}>
             <div style={styles.contentStyle}>
-                <Heading>Study in the USA</Heading> //Header
+                <Heading>Study in the USA</Heading> // Header
                 <img src={usClassPic} alt="USA Classroom" style={styles.testImage} /> //Image
                 <List> //Create list showing courses to take
                     <ListItem><strong>Course Info:</strong> Students will be attending the DePaul College of Computing and Digital Media (CDM) located in the heart of the Loop in Chicago. As graduate students, you will spend most of your time attending classes located in the CDM. Students must have a 3.0 GPA and complete five prerequisite courses to participate in this program.</ListItem> //Paragraph explaining course requirements
