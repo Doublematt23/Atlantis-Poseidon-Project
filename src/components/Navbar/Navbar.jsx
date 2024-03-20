@@ -23,24 +23,26 @@ const Navbar = () => {
 
         {/* links */}
         <NavMenu>
-          <NavLink to="/" activeStyle>
+          <NavLink to="/" onClick={() => loadEvents()} activeStyle>
             Home
           </NavLink>
 
-          <NavLink to="ChicagoAttractions" activeStyle>
+          <NavLink to="ChicagoAttractions" onClick={() => loadEvents()} activeStyle>
             Chicago
           </NavLink>
 
+          {/* only show alumni if logged in */}
           {isLoggedIn ? (
-            <NavLink to="/Alumni" activeStyle>
+            <NavLink to="/Alumni" onClick={() => loadEvents()} activeStyle>
               Alumni
             </NavLink>
           ) : null}
 
+          {/* dropdown menus */}
           <li className="dropdown">
             <strong>Application Info</strong>
             <div className="dropdown-content">
-              <NavLink to="/Apply" activeStyle>
+              <NavLink to="/Apply" onClick={() => loadEvents()} activeStyle>
                 Apply
               </NavLink>
               <NavLink to="/Timeline" onClick={() => loadEvents()} activeStyle>
@@ -48,30 +50,29 @@ const Navbar = () => {
               </NavLink>
             </div>
           </li>
-
           <li className="dropdown">
             <strong>Countries</strong>
             <div className="dropdown-content">
-              <NavLink to="/USA" activeStyle>
+              <NavLink to="/USA" onClick={() => loadEvents()} activeStyle>
                 USA
               </NavLink>
-              <NavLink to="/France" activeStyle>
+              <NavLink to="/France" onClick={() => loadEvents()} activeStyle>
                 France
               </NavLink>
-              <NavLink to="/Sweden" activeStyle>
+              <NavLink to="/Sweden" onClick={() => loadEvents()} activeStyle>
                 Sweden
               </NavLink>
             </div>
           </li>
 
-          <NavLink to="/Help" activeStyle>
+          <NavLink to="/Help" onClick={() => loadEvents()} activeStyle>
             Help
           </NavLink>
 
+          {/* check logged in status */}
           <NavLink to={!isLoggedIn ? "/Login" : "/Logout"} activeStyle>
             {isLoggedIn ? "Logout" : "Login"}
           </NavLink>
-
         </NavMenu>
       </Nav>
     </>
