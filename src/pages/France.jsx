@@ -1,44 +1,54 @@
-//Matthew Kaukialo
+//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
 
+//Oskar Staszewski worked on around 50 percent of this code. Did all information gathering, background image.
+
+//Webpage to display info about the study abroad experience offered by Atlantis in France
+
+// Import the React library for creating the component
 import React from 'react';
-import titlePic from "/src/assets/INSEEC.jpg";
-import franceClassPic from "/src/assets/FranceClass.jpg"; // Import for the additional France class image
+// Import specific assets: images for use within the component
+import titlePic from "/src/assets/INSEEC.jpg"; // Path to the background image of the main content area
+import franceClassPic from "/src/assets/FranceClass.jpg"; // Path to an image representing a France class session
+
+// Import styled components for layout and design elements within the page
 import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListItemFrance } from "./PageStyles";
 
+// Declaration of the France component as a functional component
 const France = () => {
+    // Inline styles object for dynamic styling of elements within the component
     const styles = {
-        mainContent: {
-            // minWidth: '100vw',
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundImage: `url(${titlePic})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            padding: '20px',
+        mainContent: { // Styles for the main container of the component
+            minHeight: '100vh', // Ensure it spans at least the full height of the viewport
+            display: 'flex', // Use flexbox layout
+            flexDirection: 'column', // Arrange child elements in a vertical stack
+            justifyContent: 'center', // Center children vertically within the container
+            alignItems: 'center', // Center children horizontally within the container
+            backgroundImage: `url(${titlePic})`, // Set a background image for the container
+            backgroundSize: 'cover', // Cover the entire area of the container with the background image
+            backgroundPosition: 'center', // Center the background image within the container
+            backgroundRepeat: 'no-repeat', // Do not repeat the background image
+            padding: '20px', // Add padding around the content inside the container
         },
-        contentStyle: {
-            backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            padding: '20px',
-            marginTop: '60px',
-            borderRadius: '10px',
-            maxWidth: '800px',
-            width: '100%',
-            boxSizing: 'border-box',
+        contentStyle: { // Styles for the content block within the main content area
+            backgroundColor: 'rgba(255, 255, 255, 0.5)', // Set a semi-transparent background color
+            padding: '20px', // Add padding inside the content block
+            marginTop: '60px', // Add margin above the content block
+            borderRadius: '10px', // Round the corners of the content block
+            maxWidth: '800px', // Set a maximum width for the content block
+            width: '100%', // Allow the content block to expand to 100% of its container's width
+            boxSizing: 'border-box', // Include padding and border in the element's total width and height
         },
-        testImage: {
-            maxWidth: '100%',
-            height: 'auto',
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            paddingBottom: '20px',
+        testImage: { // Styles for images used within the content block
+            maxWidth: '100%', // Ensure the image is responsive and does not exceed its container's width
+            height: 'auto', // Maintain the image's aspect ratio
+            display: 'block', // Display the image as a block-level element
+            marginLeft: 'auto', // Center the image horizontally
+            marginRight: 'auto', // Center the image horizontally
+            paddingBottom: '20px', // Add space below the image
         },
     };
 
+    // JSX to render the component
     return (
         <div style={styles.mainContent}>
             <div style={styles.contentStyle}>
@@ -58,5 +68,8 @@ const France = () => {
         </div>
     );
 };
+// The code block above this comment allows for a heading on the page, along with the img src allowing for a background image, taking styles from testImage class.
+// The ListItemFrance sections show a list of information for the French section of the Atlantis Study Abroad program.
 
+// Export the France component for use elsewhere in the application
 export default France;

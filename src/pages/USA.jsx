@@ -1,44 +1,52 @@
-//Matthew Kaukialo
+//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
+//Webpage to display info about the study abroad experience offered by Atlantis in USA
 
+
+// Import the React library for creating user interfaces
 import React from 'react';
-import titlePic from "/src/assets/USA2.jpg";
-import usClassPic from "/src/assets/USClass.jpg"; // Import for the US class image
+// Importing image assets to be used within the component
+import titlePic from "/src/assets/USA2.jpg"; // Path to the title background image
+import usClassPic from "/src/assets/USClass.jpg"; // Path to the image representing a US class
+
+// Import styled components specifically designed for page styling
 import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListItem } from "./PageStyles";
 
+// Definition of the USA component, which is a functional component in React
 const USA = () => {
+    // Inline styles for the component
     const styles = {
-        mainContent: {
-            // minWidth: '100vw',
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundImage: `url(${titlePic})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            padding: '20px',
+        mainContent: { // Styles for the main container of the component
+            minHeight: '100vh', // Ensure it takes at least the full height of the viewport
+            display: 'flex', // Use flex display for easy alignment
+            flexDirection: 'column', // Stack children vertically
+            justifyContent: 'center', // Center children vertically
+            alignItems: 'center', // Center children horizontally
+            backgroundImage: `url(${titlePic})`, // Set the background image using the imported titlePic
+            backgroundSize: 'cover', // Ensure the background image covers the entire area
+            backgroundPosition: 'center', // Center the background image
+            backgroundRepeat: 'no-repeat', // Do not repeat the background image
+            padding: '20px', // Add padding around the content for spacing
         },
-        contentStyle: {
-            backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            padding: '20px',
-            borderRadius: '10px',
-            maxWidth: '800px',
-            width: '100%',
-            boxSizing: 'border-box',
-            marginTop: '60px',
+        contentStyle: { // Styles for the content block within the main container
+            backgroundColor: 'rgba(255, 255, 255, 0.5)', // Semi-transparent background for readability
+            padding: '20px', // Padding inside the content block
+            borderRadius: '10px', // Rounded corners for aesthetic appearance
+            maxWidth: '800px', // Maximum width of the content block
+            width: '100%', // Ensure the block takes up 100% of the width of its parent
+            boxSizing: 'border-box', // Include padding and border in the width calculation
+            marginTop: '60px', // Margin above the content block to separate it from other elements
         },
-        testImage: {
-            maxWidth: '100%',
-            height: 'auto',
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            paddingBottom: '20px',
+        testImage: { // Styles for the image inside the content block
+            maxWidth: '100%', // Ensure the image is responsive and does not exceed its container's width
+            height: 'auto', // Maintain the image's aspect ratio
+            display: 'block', // Display the image as a block to apply auto margins
+            marginLeft: 'auto', // Center the image horizontally
+            marginRight: 'auto', // Center the image horizontally
+            paddingBottom: '20px', // Space below the image
         },
     };
 
+    // JSX to render for the component
     return (
         <div style={styles.mainContent}>
             <div style={styles.contentStyle}>
@@ -63,4 +71,5 @@ const USA = () => {
     );
 };
 
+// Export the USA component for use in other parts of the application
 export default USA;

@@ -1,44 +1,52 @@
-//Matthew Kaukialo
+//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
+// This page describes the attractions in Chicago and information for staying safe and having fun in Chicago
 
+
+// Import React for component creation
 import React from 'react';
-import titlePic from "/src/assets/np2.jpg";
-import usClassPic from "/src/assets/cta.png"; // Import for the US class image
+// Importing images to be used in the component for visual enhancement
+import titlePic from "/src/assets/np2.jpg"; // Background image for the main content
+import usClassPic from "/src/assets/cta.png"; // Image representing a US classroom setting, used within the content
+
+// Import styled components from PageStyles for consistent styling across the application
 import { MainContent, Heading, ImgStyle, SubHeading, IntroParagraph, List, ListItem } from "./PageStyles";
 
+// Define a functional component named ChicagoAttractions to display information about attractions in Chicago
 const ChicagoAttractions = () => {
+    // Inline styles defined for custom styling of component elements
     const styles = {
-        mainContent: {
-            // minWidth: '100vw',
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundImage: `url(${titlePic})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            padding: '20px',
+        mainContent: { // Styles for the main container of the component
+            minHeight: '100vh', // Ensure it covers the full height of the viewport for a full-screen experience
+            display: 'flex', // Use flexbox for layout
+            flexDirection: 'column', // Arrange child elements in a vertical column
+            justifyContent: 'center', // Center content vertically
+            alignItems: 'center', // Center content horizontally
+            backgroundImage: `url(${titlePic})`, // Set the imported image as the background
+            backgroundSize: 'cover', // Cover the entire area of the container with the background image
+            backgroundPosition: 'center', // Center the background image within the container
+            backgroundRepeat: 'no-repeat', // Do not repeat the background image
+            padding: '20px', // Add padding around the content for spacing
         },
-        contentStyle: {
-            backgroundColor: 'rgba(255, 255, 255, 0.5)',
-            padding: '20px',
-            borderRadius: '10px',
-            maxWidth: '800px',
-            width: '100%',
-            boxSizing: 'border-box',
-            marginTop: '60px',
+        contentStyle: { // Styles for the content block within the main content container
+            backgroundColor: 'rgba(255, 255, 255, 0.5)', // Semi-transparent white background to make text easily readable
+            padding: '20px', // Padding inside the content block
+            borderRadius: '10px', // Rounded corners for a softer look
+            maxWidth: '800px', // Maximum width of the content block to ensure readability
+            width: '100%', // Make the content block width responsive
+            boxSizing: 'border-box', // Include padding and border in the element's total width and height
+            marginTop: '60px', // Margin above the content block to separate it from other elements visually
         },
-        testImage: {
-            maxWidth: '100%',
-            height: 'auto',
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            paddingBottom: '20px',
+        testImage: { // Styles for the image displayed within the content
+            maxWidth: '100%', // Max width to ensure the image is responsive and fits within its container
+            height: 'auto', // Auto height to maintain aspect ratio
+            display: 'block', // Display the image as a block to apply margin properties correctly
+            marginLeft: 'auto', // Center the image horizontally
+            marginRight: 'auto', // Center the image horizontally
+            paddingBottom: '20px', // Space below the image
         },
     };
 
+    // JSX to render for the component
     return (
         <div style={styles.mainContent}>
             <div style={styles.contentStyle}>
@@ -57,7 +65,7 @@ const ChicagoAttractions = () => {
                     <p><li><strong>Adler Planetarium</strong>  - Located on Chicago’s lakeshore since 1930, the Adler Planetarium connects people to the universe and each other and is dedicated to astronomy and astrophysics.</li></p>
                     <p><li><strong>Art Institute of Chicago </strong> - Experience one of the world’s major museums, housing an extraordinary collection of objects from across places, cultures, and time. </li></p>
                     <p><li><strong>Museum of Contemporary Art </strong> - Founded in 1967, the Museum of Contemporary Art Chicago champions the new and unexpected in contemporary art and culture through its exhibitions, performances, programs, and collection.</li></p></ul></ListItem>
-                    <ListItem><strong>Navy Pier </strong> - This is where you go in Chicago for events, free public programs, attractions, culture, dining, shopping and more. It’s where fun lives large, whether you are a visitor or local, with family or friends.</ListItem>
+                    <ListItem><strong>Navy Pier </strong> - This is where you go in Chicago for events, free public programs, attractions, culture, dining, shopping and more. It’s where fun lives large, whether you are a visitor or local, with family or friends.</ListItem> 
                     <ListItem><strong>The Willis Tower Skydeck</strong> - On the 103rd floor of the Willis Tower about 1,353 feet off the ground, you can see up to 50 miles away on a clear day, and in addition to views of every major Chicago attraction, four surrounding states are visible.</ListItem>
                     <ListItem><strong>The Chicago Riverwalk </strong> - The completed riverwalk has become a great Chicago attraction and a world-class neighborhood asset. It has already begun to provide a dynamic new commercial space and an uninterrupted route from Lake Street to the lake itself for both pedestrians and cyclists.</ListItem>
                 </List>
@@ -66,4 +74,5 @@ const ChicagoAttractions = () => {
     );
 };
 
+// Export the ChicagoAttractions component for use in other parts of the application
 export default ChicagoAttractions;
