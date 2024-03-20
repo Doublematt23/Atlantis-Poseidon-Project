@@ -84,7 +84,7 @@ const Apply = () => {
                 <p><strong>Steps:</strong><br />
                    1) Log into the study abroad website with Campus Connect info<br />
                    2) Search for “Atlantis” on the site<br />
-                   3) State Deadline: February 15 (other programs have a Feb 1 deadline)</p>
+                   3) Deadline: February 15 (other programs have a Feb 1 deadline)</p>
                 {/* Contact information for further assistance */}
                 <p>You can contact Cara Miller for more info about visa, housing, and cost for the study abroad program.<br />
                 Cara Miller's email: <a style={styles.link} href="mailto:cmille12@depaul.edu">cmille12@depaul.edu</a></p>

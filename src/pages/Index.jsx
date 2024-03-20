@@ -9,7 +9,9 @@
 *---									
 *---        Version 1.0     2024 March 21st     	  	
 *---		       	
-*---		Michael Cullen
+*---		Michael Cullen (50% styling)
+*---
+*---        Oskar Staszewski (50% styling, background image, information put into page, footer and header template)
 *---									
 *-------------------------------------------------------------------------*/
 

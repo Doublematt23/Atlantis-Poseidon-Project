@@ -52,10 +52,7 @@ const Navbar = () => {
             Home
           </NavLink>
 
-          {/* Link to the Chicago Attractions page */}
-          <NavLink to="ChicagoAttractions" onClick={() => loadEvents()} activeStyle>
-            Chicago
-          </NavLink>
+          
 
           {/* Conditional rendering of the Alumni link based on login status */}
           {isLoggedIn ? (
@@ -78,6 +75,11 @@ const Navbar = () => {
               </NavLink>
             </div>
           </li>
+
+          {/* Link to the Chicago Attractions page */}
+          <NavLink to="ChicagoAttractions" onClick={() => loadEvents()} activeStyle>
+            Chicago
+          </NavLink>
 
           {/* Dropdown menu for Countries */}
           <li className="dropdown">
