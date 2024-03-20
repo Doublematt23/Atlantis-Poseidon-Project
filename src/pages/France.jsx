@@ -13,7 +13,7 @@
 *---        Did all comments, styling, images, everything besides info gathering
 *---		   			
 *---	    Oskar Staszewski worked on around 50 percent of this code. Did all 
-*---        information gathering, background image.
+*---        information gathering, background image, some styling.
 *---									
 *-------------------------------------------------------------------------*/
 
