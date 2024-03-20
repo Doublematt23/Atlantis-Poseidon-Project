@@ -71,7 +71,7 @@ const Navbar = () => {
               </NavLink>
               {/* Link to the Application Timeline page */}
               <NavLink to="/Timeline" onClick={() => loadEvents()} activeStyle>
-                Application Timeline
+                Timeline
               </NavLink>
             </div>
           </li>

@@ -34,10 +34,6 @@ const NavbarBurger = () => {
                     Home
                 </NavLinkBurger>
 
-                <NavLinkBurger to="ChicagoAttractions" activeStyle>
-                    Chicago
-                </NavLinkBurger>
-
                 <NavLinkBurger to="/Alumni" onClick={() => loadScreen()} activeStyle>
                     Alumni
                 </NavLinkBurger>
@@ -48,9 +44,13 @@ const NavbarBurger = () => {
                         Apply
                     </NavLinkBurgerDrop>
                     <NavLinkBurgerDrop to="/Timeline" onClick={() => loadEvents()} activeStyle>
-                        Application Timeline
+                        Timeline
                     </NavLinkBurgerDrop>
                 </DropdownContentBurger>
+
+                <NavLinkBurger to="ChicagoAttractions" activeStyle>
+                    Chicago
+                </NavLinkBurger>
 
                 <DropdownBurger style={{ color: "white" }} onClick={() => toggleMenu1()}><strong>Countries</strong></DropdownBurger>
                 <DropdownContentBurger id="hidden1" style={{ display: 'none' }}>
