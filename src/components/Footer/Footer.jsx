@@ -1,4 +1,4 @@
-//Matthew Kaukialo & Michael Cullen
+//Matthew Kaukialo(70 Percent for much of styling and information for first few sprints) & Michael Cullen
 
 import {
     Box,

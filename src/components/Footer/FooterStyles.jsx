@@ -1,4 +1,4 @@
-//Matthew Kaukialo & Michael Cullen
+//Matthew Kaukialo(50 Percent for styling of color and format particular the box and body and column) & Michael Cullen
 
 import styled from "styled-components";
 

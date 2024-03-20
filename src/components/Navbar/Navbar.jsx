@@ -1,4 +1,4 @@
-//Matthew Kaukialo & Michael Cullen
+//Matthew Kaukialo(40 percent for logo, syling and providing how the pages were set up on PC. Set up the outline which Micheal expanded on) & Michael Cullen
 
 import { Nav, NavLink, NavMenu, NavButton, NavHeader } from "./NavbarStyles";
 import logo from "/src/assets/Logo.png";
