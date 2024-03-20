@@ -1,4 +1,19 @@
-//Matthew Kaukialo(40 percent for logo, syling and providing how the pages were set up on PC also comments. Set up the outline which Micheal expanded on) & Michael Cullen (60%)
+/*-------------------------------------------------------------------------*
+*---									
+*---        Navbar.jsx						
+*---									
+*---            This file contains the code responsible for the "Navbar"
+*---        or "Header" at the top of every webpage.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		    Matthew Kaukialo(40 percent for logo, syling and providing how the pages were set up on PC also comments. Set up the outline which Micheal expanded on)
+*---            		
+*---		    Michael Cullen (60%)			
+*---								
+*-------------------------------------------------------------------------*/
 
 // Importing styled components for the Navbar layout and elements
 import { Nav, NavLink, NavMenu, NavButton, NavHeader } from "./NavbarStyles";

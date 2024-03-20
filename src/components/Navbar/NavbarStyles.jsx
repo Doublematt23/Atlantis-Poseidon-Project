@@ -1,4 +1,18 @@
-//Michael Cullen (100% styling)
+/*-------------------------------------------------------------------------*
+*---									
+*---        NavbarStyles.jsx						
+*---									
+*---            This file contains the css code responsible for styling the 
+*---        Navbar and the "burger" dropdown menu.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Michael Cullen (100% styling)
+*---            						
+*-------------------------------------------------------------------------*/
+
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 

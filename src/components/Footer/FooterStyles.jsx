@@ -1,4 +1,21 @@
-//Matthew Kaukialo(50 Percent for styling of color and format particular the box and body and column and comments) & Michael Cullen (50% styling & grid function to appropriately display contents by screen size/width)
+/*-------------------------------------------------------------------------*
+*---									
+*---        FooterStyles.jsx						
+*---									
+*---            This file contains the css code responsible for the footer
+*---        styles.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo(50 Percent for styling of color and format  
+*---        particular the box and body and column and comments)    		
+*---		   			
+*---	    Michael Cullen (50% styling & grid function to appropriately 
+*---        display contents by screen size/width)
+*---									
+*-------------------------------------------------------------------------*/
 
 import styled from "styled-components";
 

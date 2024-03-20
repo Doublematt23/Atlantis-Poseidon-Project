@@ -1,3 +1,18 @@
+/*-------------------------------------------------------------------------*
+*---									
+*---        Main.jsx						
+*---									
+*---            This file contains the code responsible for running the app.
+*---        
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		    Michael Cullen
+*---         				
+*-------------------------------------------------------------------------*/
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";

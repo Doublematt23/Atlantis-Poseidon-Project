@@ -1,4 +1,18 @@
-//Michael Cullen (50% styling)
+/*-------------------------------------------------------------------------*
+*---									
+*---        Index.jsx						
+*---									
+*---            This file contains the front page code for the home or landing
+*---        page of the website.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Michael Cullen
+*---									
+*-------------------------------------------------------------------------*/
+
 import { MapBox, IndexSectionBackground, LandingBackgroundWrapper, LearnButton, LandingWelcome, IndexSectionContainer, LandingSectionContainer } from "./PageStyles";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { useRef } from 'react';

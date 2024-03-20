@@ -1,6 +1,18 @@
-//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
-// This page describes the attractions in Chicago and information for staying safe and having fun in Chicago
-
+/*-------------------------------------------------------------------------*
+*---									
+*---        ChicagoAttractions.jsx						
+*---									
+*---            This page describes the attractions in Chicago and information 
+*---        for staying safe and having fun in Chicago.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo Worked on around 50 percent of this code. 
+*---        Did all comments, styling, images, everything besides info gathering.
+*---		 							
+*-------------------------------------------------------------------------*/
 
 // Import React for component creation
 import React from 'react';
@@ -53,8 +65,7 @@ const ChicagoAttractions = () => {
                 <Heading>Chicago Attractions</Heading>
                 <img src={usClassPic} alt="USA Classroom" style={styles.testImage} />
                 <List>
-                    <ListItem>There are many attractions and sights to see for old and new residents of Chicago scattered across the city. For easy access around Chicago, the Chicago Transit Authority is the most convenient form of transformation. Chicago has the third-largest public transportation system in the country. All the train lines meet downtown to form a loop (hence the name “downtown loop”), so it’s easy to navigate and access different places around Chicago. There are different colored train lines you can take that travel around the Chicago area. DePaul issues a U-Pass for full-time students that is covered withing a student's tuition that allows for student to use the CTA. However, if a student does not have U-Pass, then one can purchase CTA tickets at any CTA station at a kiosk. For more information, visit <a href="https://www.transitchicago.com/travel-information/getting-around/">the official Chicago Transit website.</a> Here are some local attractions across Chicago that can be accessed via the CTA:
-                    </ListItem>
+                    <ListItem>There are many attractions and sights to see for old and new residents of Chicago scattered across the city. For easy access around Chicago, the Chicago Transit Authority is the most convenient form of transformation. Chicago has the third-largest public transportation system in the country. All the train lines meet downtown to form a loop (hence the name “downtown loop”), so it’s easy to navigate and access different places around Chicago. There are different colored train lines you can take that travel around the Chicago area. DePaul issues a U-Pass for full-time students that is covered withing a student's tuition that allows for student to use the CTA. However, if a student does not have U-Pass, then one can purchase CTA tickets at any CTA station at a kiosk. For more information, visit <a href="https://www.transitchicago.com/travel-information/getting-around/">the official Chicago Transit website.</a> Here are some local attractions across Chicago that can be accessed via the CTA:</ListItem>
                     <ListItem><strong>Cloud Gate (“The Bean”) </strong>-  Located in Millennium Park, this is one of Chicago's most popular sights and a work of public art by Anish Kapoor.</ListItem>
                     <ListItem><strong>Lincoln Park Zoo </strong> - Visit a zoo dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago.</ListItem>
                     <ListItem><strong>Shedd Aquarium </strong>- Experience unforgettable encounters with belugas and bluegills, stingrays and sturgeons, sea stars, sea otters, and so many more animals from aquatic environments around the world.</ListItem>

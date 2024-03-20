@@ -1,5 +1,20 @@
-//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
-//Webpage to display info about the study abroad experience offered by Atlantis in USA
+/*-------------------------------------------------------------------------*
+*---									
+*---        USA.jsx						
+*---									
+*---            Webpage to display info about the study abroad experience 
+*---        offered by Atlantis in USA.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo Worked on around 50 percent of this code. 
+*---        Did all comments, styling, images, everything besides info gathering.
+*---		   			
+*---	    
+*---									
+*-------------------------------------------------------------------------*/
 
 
 // Import the React library for creating user interfaces

@@ -1,5 +1,17 @@
-//Matthew Kaukialo 100 percent
-//Webpage to display info about were students to get help about additional about Atlantis Program
+/*-------------------------------------------------------------------------*
+*---									
+*---        Help.jsx						
+*---									
+*---            Webpage to display info about were students to get help about 
+*---        additional about Atlantis Program.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo 100 percent
+*---            						
+*-------------------------------------------------------------------------*/
 
 import React from 'react';
 

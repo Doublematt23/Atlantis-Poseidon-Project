@@ -1,4 +1,20 @@
-//Matthew Kaukialo(70 Percent for much of styling and information for first few sprints and comments) & Michael Cullen(30% formatting)
+/*-------------------------------------------------------------------------*
+*---									
+*---        Footer.jsx						
+*---									
+*---            This file contains the code responsible for the "footer" 
+*---        component at the bottom of every webpage.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo(70 Percent for much of styling and information 
+*---        for first few sprints and comments)	    		
+*---		   			
+*---	    Michael Cullen(30% formatting)
+*---									
+*-------------------------------------------------------------------------*/
 
 // Importing styled components from FooterStyles for consistent styling across the footer
 import {

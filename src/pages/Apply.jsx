@@ -1,5 +1,17 @@
-//Matthew Kaukialo 100 percent 
-//This page gives information for people to of how and were to apply and contact and finanical information
+/*-------------------------------------------------------------------------*
+*---									
+*---        Apply.jsx						
+*---									
+*---            This page gives information for people to of how and were to
+*---        apply and contact and finanical information.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo 100 percent 
+*---            				
+*-------------------------------------------------------------------------*/
 
 // Import React to build a component using JSX syntax
 import React from 'react';

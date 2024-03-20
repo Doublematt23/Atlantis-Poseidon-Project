@@ -1,3 +1,16 @@
+/*-------------------------------------------------------------------------*
+*---									
+*---        Timeline.jsx						
+*---									
+*---            This file contains the code responsible for the application
+*---        timeline.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*-------------------------------------------------------------------------*/
+
 import React, { useState, useEffect } from "react";
 import { Timeline, Card } from "antd";
 import axios from "axios";

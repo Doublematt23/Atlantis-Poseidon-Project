@@ -1,3 +1,13 @@
+/*-------------------------------------------------------------------------*
+*---									
+*---        AuthContext.jsx						
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st   Simon Shamoon 	  	
+*---		       	
+*-------------------------------------------------------------------------*/
+
 import React, { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
