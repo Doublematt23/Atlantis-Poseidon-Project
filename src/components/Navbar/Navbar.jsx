@@ -76,11 +76,6 @@ const Navbar = () => {
             </div>
           </li>
 
-          {/* Link to the Chicago Attractions page */}
-          <NavLink to="ChicagoAttractions" onClick={() => loadEvents()} activeStyle>
-            Chicago
-          </NavLink>
-
           {/* Dropdown menu for Countries */}
           <li className="dropdown">
             <strong>Countries</strong>
@@ -99,6 +94,11 @@ const Navbar = () => {
               </NavLink>
             </div>
           </li>
+
+          {/* Link to the Chicago Attractions page */}
+          <NavLink to="ChicagoAttractions" onClick={() => loadEvents()} activeStyle>
+            Chicago
+          </NavLink>
 
           {/* Link to the Help page */}
           <NavLink to="/Help" onClick={() => loadEvents()} activeStyle>
