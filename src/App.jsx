@@ -9,7 +9,7 @@ import {
 import Home from "./pages/Index.jsx";
 import Alumni from "./pages/Alumni.jsx";
 import Apply from "./pages/Apply.jsx";
-import Timeline from "./pages/Timeline.jsx";
+import TimelineComponent from "./pages/Timeline.jsx";
 import Help from "./pages/Help.jsx";
 import USA from "./pages/USA.jsx";
 import France from "./pages/France.jsx";
@@ -29,7 +29,7 @@ function App() {
                 <Routes>
                     {/* main pages */}
                     <Route exact path="/" element={<Home />} />
-                    <Route path="/Timeline" element={<Timeline />} />
+                    <Route path="/Timeline" element={<TimelineComponent />} />
                     <Route path="/Apply" element={<Apply />} />
                     <Route path="/Alumni" element={<Alumni />} />
                     <Route path="/Help" element={<Help />} />
