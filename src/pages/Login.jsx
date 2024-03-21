@@ -1,20 +1,13 @@
-/*-------------------------------------------------------------------------*
-*---									
-*---        Login.jsx						
-*---									
-*---            This file contains the code responsible for logging in to see
-*---        the alumni page
-*---	   		
-*---	----	----	----	----	----	----	----	----	---*
-*---									
-*---        Version 1.0     2024 March 21st     	  	
-*---		       	
-*-------------------------------------------------------------------------*/
-
+/**
+ * Login component responsible for handling user login.
+ * @version 1.0
+ * @author Simon Shamoon 100%
+ * 2024 March 21st
+ */
 import React, { useState } from "react";
 import axios from "axios";
 import { Box, Button, TextField, Typography } from "@mui/material";
-import { useNavigate } from "react-router-dom"; // Step 1: Import useNavigate
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
@@ -22,7 +15,7 @@ const Login = () => {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // Step 2: Create a navigate function
+  const navigate = useNavigate();
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -52,7 +45,7 @@ const Login = () => {
     if (response.status === 200) {
       localStorage.setItem("token", response.data.token); // Save the token in localStorage
       alert("Login successful.");
-    setIsLoggedIn(true); // Update the login status
+      setIsLoggedIn(true); // Update the login status
       navigate("/"); // Step 3: Navigate to /Home
     } else {
       console.log(response);

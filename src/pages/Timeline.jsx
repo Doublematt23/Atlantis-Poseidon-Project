@@ -1,16 +1,9 @@
-/*-------------------------------------------------------------------------*
-*---									
-*---        Timeline.jsx						
-*---									
-*---            This file contains the code responsible for the application
-*---        timeline.
-*---	   		
-*---	----	----	----	----	----	----	----	----	---*
-*---									
-*---        Version 1.0     2024 March 21st     	  	
-*---		       	
-*-------------------------------------------------------------------------*/
-
+/**
+ * Component that displays a timeline with data fetched from an API.
+ * @version 1.0
+ * @author Simon Shamoon 100%
+ * 2024 March 21st
+ */
 import React, { useState, useEffect } from "react";
 import { Timeline, Card } from "antd";
 import axios from "axios";
@@ -19,6 +12,9 @@ const TimelineComponent = () => {
   const [timelineData, setTimelineData] = useState([]);
 
   useEffect(() => {
+    /**
+     * Fetches timeline data from the API.
+     */
     const fetchTimelineData = async () => {
       try {
         const response = await axios.get(
@@ -33,6 +29,7 @@ const TimelineComponent = () => {
 
     fetchTimelineData();
   }, []);
+
   return (
     <Card
       style={{

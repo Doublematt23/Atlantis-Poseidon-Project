@@ -1,13 +1,9 @@
-/*-------------------------------------------------------------------------*
-*---									
-*---        Alumni.jsx						
-*---									
-*---	----	----	----	----	----	----	----	----	---*
-*---									
-*---        Version 1.0     2024 March 21st     	  	
-*---		       	
-*-------------------------------------------------------------------------*/
-
+/**
+ * Represents the Alumni page component.
+ * @version 1.0
+ * @author Simon Shamoon 100%
+ * 2024 March 21st
+ */
 import axios from "axios";
 import { useEffect, useState } from "react";
 import {
@@ -28,6 +24,10 @@ const Alumni = () => {
   const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
+    /**
+     * Fetches alumni data from the server.
+     * @async
+     */
     const fetchData = async () => {
       const token = localStorage.getItem("token");
       try {
@@ -35,7 +35,7 @@ const Alumni = () => {
           method: "GET",
         });
         setAlumniArray(response.data);
-        setLoading(false); 
+        setLoading(false);
       } catch (error) {
         console.error(error);
       }
