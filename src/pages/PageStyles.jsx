@@ -1,5 +1,23 @@
-//Michael Cullen
-//Matthew Kaukialo Worked on 25 percent of this code for styling Countries and parts of footer
+/*-------------------------------------------------------------------------*
+*---									
+*---        PageStyles.jsx						
+*---									
+*---            This file contains the code responsible for 
+*---        
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Michael Cullen (25% styling)
+*---            		
+*---		Matthew Kaukialo Worked on 25 percent of this code for styling 
+*---	    Countries and parts of footer
+*---
+*---        Oskar Staszewski worked on 50 percent of this code for styling 
+*---        home page, along with parts of header and footer for each page.
+*---									
+*-------------------------------------------------------------------------*/
 
 // Import NavLink from react-router-dom for navigation links
 import { NavLink as Link } from "react-router-dom";

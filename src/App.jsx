@@ -1,4 +1,17 @@
-//Michael Cullen
+/*-------------------------------------------------------------------------*
+*---									
+*---        App.jsx						
+*---									
+*---            This file contains the code responsible for routing the app.
+*---        
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Michael Cullen
+*---            						
+*-------------------------------------------------------------------------*/
+
 import Navbar from "./components/Navbar/Navbar.jsx";
 import NavbarBurger from "./components/Navbar/NavbarBurger.jsx";
 import {

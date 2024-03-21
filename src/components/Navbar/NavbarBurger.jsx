@@ -1,4 +1,17 @@
-//Michael Cullen
+/*-------------------------------------------------------------------------*
+*---									
+*---        NavbarBurger.jsx						
+*---									
+*---            This file contains the code responsible for the mobile
+*---        dropdown menu.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---	    Michael Cullen 100% styling for mobile view
+*---            		
+*-------------------------------------------------------------------------*/
 
 import {
     DropdownBurger,
@@ -21,10 +34,6 @@ const NavbarBurger = () => {
                     Home
                 </NavLinkBurger>
 
-                <NavLinkBurger to="ChicagoAttractions" activeStyle>
-                    Chicago
-                </NavLinkBurger>
-
                 <NavLinkBurger to="/Alumni" onClick={() => loadScreen()} activeStyle>
                     Alumni
                 </NavLinkBurger>
@@ -35,7 +44,7 @@ const NavbarBurger = () => {
                         Apply
                     </NavLinkBurgerDrop>
                     <NavLinkBurgerDrop to="/Timeline" onClick={() => loadEvents()} activeStyle>
-                        Application Timeline
+                        Timeline
                     </NavLinkBurgerDrop>
                 </DropdownContentBurger>
 
@@ -51,6 +60,10 @@ const NavbarBurger = () => {
                         Sweden
                     </NavLinkBurgerDrop>
                 </DropdownContentBurger>
+
+                <NavLinkBurger to="ChicagoAttractions" activeStyle>
+                    Chicago
+                </NavLinkBurger>
 
                 <NavLinkBurger to="/Help" onClick={() => loadScreen()} activeStyle>
                     Help

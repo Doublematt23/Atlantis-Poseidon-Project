@@ -1,3 +1,16 @@
+/*-------------------------------------------------------------------------*
+*---									
+*---        Logout.jsx						
+*---									
+*---            This file contains the code responsible for logging you out
+*---        of the alumni page.
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	 
+*---									
+*-------------------------------------------------------------------------*/
+
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";

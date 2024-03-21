@@ -1,3 +1,16 @@
+/*-------------------------------------------------------------------------*
+*---									
+*---        Login.jsx						
+*---									
+*---            This file contains the code responsible for logging in to see
+*---        the alumni page
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*-------------------------------------------------------------------------*/
+
 import React, { useState } from "react";
 import axios from "axios";
 import { Box, Button, TextField, Typography } from "@mui/material";

@@ -1,5 +1,21 @@
-//Matthew Kaukialo Worked on around 50 percent of this code. Did all comments, styling, images, everything besides info gathering
-//Webpage to display info about the study abroad experience offered by Atlantis in France
+/*-------------------------------------------------------------------------*
+*---									
+*---        France.jsx						
+*---									
+*---            Webpage to display info about the study abroad experience  
+*---        offered by Atlantis in France
+*---	   		
+*---	----	----	----	----	----	----	----	----	---*
+*---									
+*---        Version 1.0     2024 March 21st     	  	
+*---		       	
+*---		Matthew Kaukialo Worked on around 50 percent of this code. 
+*---        Did all comments, styling, images, everything besides info gathering
+*---		   			
+*---	    Oskar Staszewski worked on around 50 percent of this code. Did all 
+*---        information gathering, background image, some styling.
+*---									
+*-------------------------------------------------------------------------*/
 
 // Import the React library for creating the component
 import React from 'react';
@@ -65,6 +81,8 @@ const France = () => {
         </div>
     );
 };
+// The code block above this comment allows for a heading on the page, along with the img src allowing for a background image, taking styles from testImage class.
+// The ListItemFrance sections show a list of information for the French section of the Atlantis Study Abroad program.
 
 // Export the France component for use elsewhere in the application
 export default France;
