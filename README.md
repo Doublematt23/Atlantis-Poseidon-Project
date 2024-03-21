@@ -1,22 +1,30 @@
-# How to run:
-    install node js
+# How to Run the Project
 
-    https://nodejs.org/en/download
+Follow these steps to set up and run the project:
 
-    open terminal
+1. **Install Node.js**
+   - Download Node.js from [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
+   
+2. **Verify Node.js Installation**
+   - Open your terminal.
+   - Run the command `node -v` to ensure Node.js is installed successfully.
 
-    run "node -v" to ensure node.js is installed
-    
-    open the terminal and cd into the project directory
-    
-    run "npm install" 
-    
-    run "npm run dev"
-    
-        (TROUBLESHOOTING:
-        If the "npm run dev" command spits out the error message "sh: vite: command not found", try deleting the package-lock.json folder, rerun "npm install" first, and then run "npm run dev" again)
-    
-allow google chrome to open the webpage or press o+enter
+3. **Navigate to Project Directory**
+   - Open the terminal.
+   - Change directory to your project folder using `cd path/to/project-directory`.
+
+4. **Install Dependencies**
+   - Run `npm install` to install all required dependencies listed in the `package.json` file.
+
+5. **Start the Development Server**
+   - Execute `npm run dev` to start the development server.
+
+## Troubleshooting
+
+- If you encounter the error `sh: vite: command not found` when running `npm run dev`, follow these steps:
+    1. Delete the `package-lock.json` file.
+    2. Rerun `npm install` to reinstall the dependencies.
+    3. Try `npm run dev` again.
 
 
 
